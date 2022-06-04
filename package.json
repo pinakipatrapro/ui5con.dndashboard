@@ -8,11 +8,13 @@
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
     "karma-ui5": "^2.3.3",
-    "ui5-middleware-livereload": "^0.5.1"
+    "ui5-middleware-livereload": "^0.5.1",
+    "ui5-tooling-modules": "^0.3.3"
   },
   "ui5": {
     "dependencies": [
-      "ui5-middleware-livereload"
+      "ui5-middleware-livereload",
+      "ui5-tooling-modules"
     ]
   },
   "scripts": {
@@ -21,5 +23,10 @@
     "testsuite": "ui5 serve --open test-resources/ui5con/dndashboard/qunit/testsuite.qunit.html",
     "test": "karma start --browsers=ChromeHeadless --singleRun=true"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "chart.js": "^3.8.0",
+    "chartjs": "^0.3.24",
+    "gridstack": "^5.1.0"
+  }
 }
