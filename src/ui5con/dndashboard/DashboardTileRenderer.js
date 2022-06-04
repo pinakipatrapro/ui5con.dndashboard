@@ -13,7 +13,10 @@ sap.ui.define([
 	DashboardTileRenderer.render = function (rm, control) {
 
 		rm.openStart("div", control);
-		rm.class("grid-stack-item")
+		rm.class("grid-stack-item");
+		if(control.getEditable()){
+			rm.class('dndashboardTileEditable')
+		}
 		rm.openEnd( );
 
 			rm.openStart("div");

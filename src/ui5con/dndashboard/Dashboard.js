@@ -14,12 +14,24 @@ sap.ui.define([
 		metadata: {
 			library: "ui5con.dndashboard",
 			properties: {
-
+				editable: {
+					type: "boolean",
+					defaultValue: false
+				},
+				float: {
+					type: "boolean",
+					defaultValue: true
+				},
 			},
 			aggregations:{
 				tiles: {
-					type: "sap.ui.core.Control",
+					type: "ui5con.dndashboard.DashboardTile",
 					multiple: true,
+					visibility: "public"
+				},
+				header: {
+					type: "sap.m.Toolbar",
+					multiple: false,
 					visibility: "public"
 				}
 			},
@@ -30,13 +42,13 @@ sap.ui.define([
 		renderer: DashboardRenderer,
     onAfterRendering: function() {
 		var grid = GridStack.init({
-			// disableResize :!this.getEditable(),
-			// disableDrag  : !this.getEditable(),
-			cellHeight:'10rem',
-			// float : this.getFloat(),
-			minRow : 3,
-			float : true
-			// margin : 10,
+			disableResize :!this.getEditable(),
+			disableDrag  : !this.getEditable(),
+			cellHeight:'5rem',
+			float : this.getFloat(),
+			minRow : 4,
+			float : true,
+			margin : 5,
 		});
     }
 	});

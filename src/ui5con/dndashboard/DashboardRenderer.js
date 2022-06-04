@@ -15,11 +15,14 @@ sap.ui.define([
 		rm.openStart("div", control);
 		rm.openEnd( );
 
+			rm.renderControl(control.getAggregation('header'))
+			
 			rm.openStart("div");
 			rm.class("grid-stack")
 			rm.openEnd();
 			
 				control.getAggregation('tiles').map((e)=>{
+					e.setEditable(control.getEditable())
 					rm.renderControl(e)
 				})
 			rm.close("div");

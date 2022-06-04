@@ -13,24 +13,19 @@ sap.ui.define([
 		metadata: {
 			library: "ui5con.dndashboard",
 			properties: {
-
+				editable: {
+					type: "boolean",
+					defaultValue: false
+				}
 			},
 			events: {
 				press: {}
 			}
 		},
 		renderer: DashboardTileRenderer,
-    onAfterRendering: function() {
-		// var grid = GridStack.init({
-		// 	// disableResize :!this.getEditable(),
-		// 	// disableDrag  : !this.getEditable(),
-		// 	cellHeight:'10rem',
-		// 	// float : this.getFloat(),
-		// 	minRow : 3,
-		// 	float : true
-		// 	// margin : 10,
-		// });
-    }
+		onAfterRendering: function() {
+
+		}
 	});
 	return DashboardTile;
 

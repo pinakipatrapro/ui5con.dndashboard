@@ -9,8 +9,20 @@ sap.ui.define([
 
 	var DashboardColor = library.ExampleColor;
 	let dashboard = new Dashboard({
-		text: "Dashboard",
+		editable: true,
 		color: DashboardColor.Highlight,
+		header : new sap.m.Toolbar({
+			content : [
+				new sap.m.Title({text:"My New Dashboard"}),
+				new sap.m.ToolbarSpacer(),
+				new sap.m.Button({
+					text:"Edit",
+					press : (oEvent)=>{
+						oEvent.getSource().getParent().getParent().setEditable(!oEvent.getSource().getParent().getParent().getEditable())
+					}
+				})
+			]
+		}),
 		tiles : [
 			new DashboardTile(),
 			new DashboardTile(),
