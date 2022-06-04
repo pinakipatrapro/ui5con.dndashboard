@@ -10,7 +10,7 @@ sap.ui.define([
 
 	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
 
-	var Dashboard = Control.extend("ui5con.dndashboard.Dashboard", /** @lends ui5con.dndashboard.Dashboard.prototype */ {
+	var Dashboard = Control.extend("ui5con.dndashboard.Dashboard",  {
 		metadata: {
 			library: "ui5con.dndashboard",
 			properties: {

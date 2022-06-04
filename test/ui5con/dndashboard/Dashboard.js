@@ -30,7 +30,8 @@ sap.ui.define([
 				"posx":"{posx}",
 				"posy":"{posy}",
 				"width": "{width}",
-				"height":"{height}"
+				"height":"{height}",
+				"content": new sap.m.Toolbar()
 			})
 		}
 	});

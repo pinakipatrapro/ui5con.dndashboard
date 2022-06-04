@@ -9,7 +9,7 @@ sap.ui.define([
 
 	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
 
-	var DashboardTile = Control.extend("ui5con.dndashboard.DashboardTile", /** @lends ui5con.dndashboard.Dashboard.prototype */ {
+	var DashboardTile = Control.extend("ui5con.dndashboard.DashboardTile",  {
 		metadata: {
 			library: "ui5con.dndashboard",
 			properties: {
@@ -32,6 +32,13 @@ sap.ui.define([
 				posy: {
 					type: "string",
 					defaultValue: 0
+				}
+			},
+			aggregations:{
+				content: {
+					type: "sap.ui.core.Control",
+					multiple: false,
+					visibility: "public"
 				}
 			},
 			events: {

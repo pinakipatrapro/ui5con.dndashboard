@@ -28,7 +28,7 @@ sap.ui.define([
 			rm.openStart("div");
 			rm.class("grid-stack-item-content")
 			rm.openEnd( );
-				rm.renderControl(new sap.m.Button())
+				rm.renderControl(control.getAggregation('content'))
 			rm.close("div");
 		rm.close("div");
 

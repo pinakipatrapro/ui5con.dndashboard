@@ -13,6 +13,13 @@
             "posy":0,
             "width":4,
             "height":2
+        },
+        {
+            "name":"2",
+            "posx":6,
+            "posy":2,
+            "width":4,
+            "height":2
         }
     ]
 }
