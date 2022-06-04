@@ -1,6 +1,3 @@
-/*!
- * ${copyright}
- */
 
 sap.ui.define([
 	"sap/ui/core/Core",
@@ -8,36 +5,26 @@ sap.ui.define([
 ], function (Core, library) {
 	"use strict";
 
-	// refer to library types
-	var DashboardColor = library.ExampleColor;
 
-	/**
-	 * Dashboard renderer.
-	 * @namespace
-	 */
 	var DashboardRenderer = {
 		apiVersion: 2 // usage of DOM Patcher
 	};
 
-	/**
-	 * Renders the HTML for the given control, using the provided
-	 * {@link sap.ui.core.RenderManager}.
-	 *
-	 * @param {sap.ui.core.RenderManager} rm The reference to the <code>sap.ui.core.RenderManager</code>
-	 * @param {sap.ui.core.Control} control The control instance to be rendered
-	 */
 	DashboardRenderer.render = function (rm, control) {
 
 		rm.openStart("div", control);
 		rm.openEnd( );
 
-		rm.openStart("div");
-		rm.class("grid-stack")
-		rm.openEnd();
+			rm.openStart("div");
+			rm.class("grid-stack")
+			rm.openEnd();
+			
+				control.getAggregation('tiles').map((e)=>{
+					rm.renderControl(e)
+				})
+			rm.close("div");
 
-		for(var i=0;i<5;i++){
-			rm.renderControl(new sap.m.Button());
-		}
+		rm.close("div");
 
 
 	};

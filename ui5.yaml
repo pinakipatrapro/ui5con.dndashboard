@@ -4,12 +4,13 @@ metadata:
 type: library
 framework:
   name: OpenUI5
-  version: 1.86.3
+  version: 1.102.1
   libraries:
     - name: sap.ui.core
     - name: sap.m
     - name: themelib_sap_belize
     - name: themelib_sap_fiori_3
+    - name: themelib_sap_horizon
 
 builder:
   customTasks:
