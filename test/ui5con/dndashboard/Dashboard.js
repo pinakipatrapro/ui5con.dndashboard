@@ -7,11 +7,11 @@ sap.ui.define([
 ], function(library, Dashboard,DashboardTile,Page,App) {
 	"use strict";
 
+	var model = new sap.ui.model.json.JSONModel('./test-resources/ui5con/dndashboard//helper/Dashboard.json');
 	var DashboardColor = library.ExampleColor;
 	let dashboard = new Dashboard({
 		editable: true,
 		height:"90rem",
-		color: DashboardColor.Highlight,
 		header : new sap.m.Toolbar({
 			content : [
 				new sap.m.Title({text:"My New Dashboard"}),
@@ -24,18 +24,23 @@ sap.ui.define([
 				})
 			]
 		}),
-		tiles : [
-			new DashboardTile(),
-			new DashboardTile(),
-			new DashboardTile(),
-			new DashboardTile({text:'123'})
-		]
+		tiles : {
+			path:"/tiles",
+			template: new DashboardTile({
+				"posx":"{posx}",
+				"posy":"{posy}",
+				"width": "{width}",
+				"height":"{height}"
+			})
+		}
 	});
 	dashboard.addStyleClass('sapUiLargeMargin')
 	let page = new Page({
 		content : dashboard,
 		title : "Test Page for ui5con.dndashboard.Dashboard"
 	});
+
+	page.setModel(model);
 	
 	new App({
 		pages : page
