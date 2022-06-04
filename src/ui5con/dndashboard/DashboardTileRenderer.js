@@ -14,6 +14,12 @@ sap.ui.define([
 
 		rm.openStart("div", control);
 		rm.class("grid-stack-item");
+		//Set Positional Parameters
+		rm.attr("gs-x", control.getPosx());
+		rm.attr("gs-y", control.getPosy());
+		rm.attr("gs-w", control.getWidth());
+		rm.attr("gs-h", control.getHeight());
+
 		if(control.getEditable()){
 			rm.class('dndashboardTileEditable')
 		}

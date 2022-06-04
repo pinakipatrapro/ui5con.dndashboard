@@ -22,6 +22,10 @@ sap.ui.define([
 					type: "boolean",
 					defaultValue: true
 				},
+				height: {
+					type: "string",
+					defaultValue: "80vh"
+				},
 			},
 			aggregations:{
 				tiles: {
@@ -49,6 +53,16 @@ sap.ui.define([
 			minRow : 4,
 			float : true,
 			margin : 5,
+		});
+		grid.on('resizestop', function(event, items) {
+			sap.ui.getCore().byId(items.getAttribute('id')).setWidth(items.getAttribute('gs-w'));
+			sap.ui.getCore().byId(items.getAttribute('id')).setHeight(items.getAttribute('gs-h'));
+
+		});
+		grid.on('dragstop', function(event, items) {
+			sap.ui.getCore().byId(items.getAttribute('id')).setPosx(items.getAttribute('gs-x'));
+			sap.ui.getCore().byId(items.getAttribute('id')).setPosy(items.getAttribute('gs-y'));
+
 		});
     }
 	});

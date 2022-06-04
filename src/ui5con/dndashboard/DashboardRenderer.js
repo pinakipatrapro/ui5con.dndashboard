@@ -13,9 +13,11 @@ sap.ui.define([
 	DashboardRenderer.render = function (rm, control) {
 
 		rm.openStart("div", control);
+		rm.style("height", control.getHeight());
 		rm.openEnd( );
 
 			rm.renderControl(control.getAggregation('header'))
+			
 			
 			rm.openStart("div");
 			rm.class("grid-stack")

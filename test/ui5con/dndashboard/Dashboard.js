@@ -10,6 +10,7 @@ sap.ui.define([
 	var DashboardColor = library.ExampleColor;
 	let dashboard = new Dashboard({
 		editable: true,
+		height:"90rem",
 		color: DashboardColor.Highlight,
 		header : new sap.m.Toolbar({
 			content : [
