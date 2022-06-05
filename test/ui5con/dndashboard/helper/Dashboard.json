@@ -5,21 +5,62 @@
             "posx":0,
             "posy":0,
             "width":2,
-            "height":2
-        },
-        {
-            "name":"2",
-            "posx":2,
-            "posy":0,
-            "width":4,
-            "height":2
-        },
-        {
-            "name":"2",
-            "posx":6,
-            "posy":2,
-            "width":4,
-            "height":2
+            "height":2,
+            "title": "Radar Bar Chart V2",
+            "cardType": "chart",
+            "zoomEnabled": false,
+            "chartType": "barChart",
+            "size": "5x5",
+            "xGrid": true,
+            "darkMode": true,
+            "showLegend": true,
+            "legendPosition": "bottom",
+            "background": "white",
+            "renderBare": true,
+            "enableFilledLine": false,
+            "dataPointColor": "teal",
+            "measureColour": [
+                "#0088FEAB",
+                "#00C49FAB",
+                "#FFBB28AB",
+                "#FF8042AB"
+            ],
+            "showDataPoints": true,
+            "smartNumberFormat": true,
+            "measure": [
+                "Cases",
+                "Recovered"
+            ],
+            "dimension": [
+                "Country"
+            ],
+            "data": [
+                {
+                    "Country": "China",
+                    "Recovered": 82,
+                    "Cases": 73
+                },
+                {
+                    "Country": "India",
+                    "Recovered": 56,
+                    "Cases": 60
+                },
+                {
+                    "Country": "USA",
+                    "Recovered": 165,
+                    "Cases": 70
+                },
+                {
+                    "Country": "Brazil",
+                    "Recovered": 78,
+                    "Cases": 86
+                },
+                {
+                    "Country": "Italy",
+                    "Recovered": 56,
+                    "Cases": 65
+                }
+            ]
         }
     ]
 }

@@ -33,61 +33,64 @@ sap.ui.define([
 				"width": "{width}",
 				"height":"{height}",
 				"content": new DashboardChart({
-					"title": "Radar Bar Chart V2",
-					"cardType": "chart",
-					"zoomEnabled": false,
-					"chartType": "barChart",
-					"size": "5x5",
-					"xGrid": true,
-					"darkMode": true,
-					"showLegend": true,
-					"legendPosition": "bottom",
-					"background": "white",
-					"renderBare": true,
-					"enableFilledLine": false,
-					"dataPointColor": "teal",
-					"measureColour": [
-						"#0088FEAB",
-						"#00C49FAB",
-						"#FFBB28AB",
-						"#FF8042AB"
-					],
-					"showDataPoints": true,
-					"smartNumberFormat": true,
-					"measure": [
-						"Cases",
-						"Recovered"
-					],
-					"dimension": [
-						"Country"
-					],
-					"data": [
-						{
-							"Country": "China",
-							"Recovered": 82,
-							"Cases": 73
-						},
-						{
-							"Country": "India",
-							"Recovered": 56,
-							"Cases": 60
-						},
-						{
-							"Country": "USA",
-							"Recovered": 165,
-							"Cases": 70
-						},
-						{
-							"Country": "Brazil",
-							"Recovered": 78,
-							"Cases": 86
-						},
-						{
-							"Country": "Italy",
-							"Recovered": 56,
-							"Cases": 65
-						}
-					]
+					title: "{title}",
+					headerFontSize : "{headerFontSize}",
+					showULTitle : "{showULTitle}",
+					infoIcon : "{infoIcon}",
+					infoIconColor : "{infoIconColor}",
+					infoText:"{infoText}",
+					infoUOM : "{infoUOM}",
+					size: "{size}",
+					chartType: "{chartType}",
+					cardType: "{cardType}",
+					info: "{info}",
+					mesL:"{mesL}",
+					mesR:"{mesR}",
+					labL:"{labL}",
+					labR:"{labR}",
+					background : "{background}",
+					darkMode: "{darkMode}",
+					fitToParent : "{fitToParent}",
+					radialPerc: "{radialPerc}",
+					radialColor: "{radialColor}",
+					radialSummaryBase : "{radialSummaryBase}",
+					radialSummaryValue : "{radialSummaryValue}",
+					measureBlock : "{measureBlock}",
+					progressVisible : "{progressVisible}",
+					chartType : "{chartType}",
+					measure : "{measure}",
+					dimension : "{dimension}",
+					data : "{data}",
+					measureColour : "{measureColour}",
+					xGrid : "{xGrid}",
+					yGrid : "{yGrid}",
+					xAxisLabel:"{xAxisLabel}",
+					yAxisLabel:"{yAxisLabel}",
+					showLegend : "{showLegend}",
+					legendPosition : "{legendPosition}",
+					measureChartType : "{measureChartType}",
+					borderColor : "{borderColor}",
+					stacked : "{stacked}",
+					enableFilledLine : "{enableFilledLine}",
+					cutOutPercentage : "{cutOutPercentage}",
+					labels : "{labels}",
+					enableAxisLabels :"{enableAxisLabels}",
+					label: "{label}",
+					scatterLabel : "{scatterLabel}",
+					zoomEnabled : "{zoomEnabled}",
+					draggable : "{draggable}",
+					zoomDirection: "{zoomDirection}",
+					radius : "{radius}",
+					sizeInPerc : "{sizeInPerc}",
+					smartNumberFormat : "{smartNumberFormat}",
+					xAxisUOM : "{xAxisUOM}",
+					yAxisUOM : "{yAxisUOM}",
+					showDataPoints : "{showDataPoints}",
+					dataPointColor : "{dataPointColor}",
+					measureYAxis : "{measureYAxis}",
+					y2AxisUOM : "{y2AxisUOM}",
+					y2AxisLabel : "{y2AxisLabel}",
+					borderRadius:"{borderRadius}"
             
 				})
 			})
@@ -98,7 +101,7 @@ sap.ui.define([
 		content : dashboard,
 		title : "Test Page for ui5con.dndashboard.Dashboard"
 	});
-
+	page.addStyleClass('sapUiSizeCompact')
 	page.setModel(model);
 	
 	new App({
