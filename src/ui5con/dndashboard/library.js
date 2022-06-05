@@ -25,7 +25,8 @@ sap.ui.define([
 		controls: [
 			"ui5con.dndashboard.Example",
 			"ui5con.dndashboard.Dashboard",
-			"ui5con.dndashboard.DashboardTile"
+			"ui5con.dndashboard.DashboardTile",
+			"ui5con.dndashboard.DashboardChart"
 		],
 		elements: [],
 		noLibraryCSS: false // if no CSS is provided, you can disable the library.css load here

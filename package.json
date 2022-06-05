@@ -25,6 +25,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "@toast-ui/chart": "^4.4.3",
     "chart.js": "^3.8.0",
     "chartjs": "^0.3.24",
     "gridstack": "^5.1.0"
