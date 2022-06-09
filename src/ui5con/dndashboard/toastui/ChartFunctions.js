@@ -79,9 +79,9 @@ sap.ui.define([
             this.postChartRendering()
         },
         postChartRendering: function () {
-            // var vtoolTip = document.getElementsByClassName('toastui-chart-tooltip-container');
-            // vtoolTip[0].style.position = 'fixed';
-            // return vtoolTip;
+            var vtoolTip = document.getElementsByClassName('toastui-chart-tooltip-container');
+            vtoolTip[0].style.position = 'fixed';
+            return vtoolTip;
         },
         createTheme: function (oControl) {
             var whiteIfDarkMode = oControl.getDarkMode() ? 'white' : '#000000';

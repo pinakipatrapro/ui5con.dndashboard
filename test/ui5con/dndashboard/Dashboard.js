@@ -67,7 +67,12 @@ sap.ui.define([
 	dashboard.addStyleClass('sapUiSmallMargin')
 	let page = new Page({
 		content : dashboard,
-		title : "Test Page for ui5con.dndashboard.Dashboard"
+		customHeader : new sap.m.Toolbar({
+			content : [
+				new sap.m.Title({text:"Test Page for ui5con.dndashboard.Dashboard"}),
+				new sap.m.ToolbarSpacer()
+			]
+		})
 	});
 	page.addStyleClass('sapUiSizeCompact')
 	page.setModel(model);

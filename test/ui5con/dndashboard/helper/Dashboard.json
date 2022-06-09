@@ -4,58 +4,108 @@
             "name":"1",
             "posx":0,
             "posy":0,
-            "width":5,
-            "height":5,
-            "title": "Radar Bar Chart V2",
-            "chartType": "barChart",
+            "width":4,
+            "height":8,
+            "title": "Radar Chart - Top Cars By Effeciency & Range",
+            "chartType": "radarChart",
             "xGrid": true,
+            "yGrid": true,
             "darkMode": true,
             "showLegend": true,
             "legendPosition": "bottom",
-            "enableFilledLine": false,
+            "enableFilledLine": true,
             "dataPointColor": "teal",
             "measureColour": [
-                "#0088FEAB",
-                "#00C49FAB",
-                "#FFBB28AB",
+                "#0088FE55",
+                "#00C49F55",
+                "#FFBB2855",
                 "#FF8042AB"
             ],
             "showDataPoints": true,
             "smartNumberFormat": true,
             "measure": [
-                "Cases",
-                "Recovered"
+                "Top Speed(KM/H)",
+                "Range(KM)",
+                "Effeciency (Wh/KM)"
             ],
             "dimension": [
-                "Country"
+                "Brand"
+                
             ],
             "data": [
                 {
-                    "Country": "China",
-                    "Recovered": 82,
-                    "Cases": 73
+                  "Brand": "Porsche",
+                  "Top Speed(KM/H)": 254,
+                  "Range(KM)": 388,
+                  "Effeciency (Wh/KM)": 209
                 },
                 {
-                    "Country": "India",
-                    "Recovered": 56,
-                    "Cases": 60
+                  "Brand": "Lucid",
+                  "Top Speed(KM/H)": 250,
+                  "Range(KM)": 610,
+                  "Effeciency (Wh/KM)": 180
                 },
                 {
-                    "Country": "USA",
-                    "Recovered": 165,
-                    "Cases": 70
+                  "Brand": "Tesla",
+                  "Top Speed(KM/H)": 244,
+                  "Range(KM)": 501,
+                  "Effeciency (Wh/KM)": 201
                 },
                 {
-                    "Country": "Brazil",
-                    "Recovered": 78,
-                    "Cases": 86
+                  "Brand": "Polestar",
+                  "Top Speed(KM/H)": 210,
+                  "Range(KM)": 400,
+                  "Effeciency (Wh/KM)": 181
                 },
                 {
-                    "Country": "Italy",
-                    "Recovered": 56,
-                    "Cases": 65
+                  "Brand": "Audi",
+                  "Top Speed(KM/H)": 200,
+                  "Range(KM)": 357,
+                  "Effeciency (Wh/KM)": 225
+                },
+                {
+                  "Brand": "Jaguar",
+                  "Top Speed(KM/H)": 200,
+                  "Range(KM)": 365,
+                  "Effeciency (Wh/KM)": 232
+                },
+                {
+                  "Brand": "Byton",
+                  "Top Speed(KM/H)": 190,
+                  "Range(KM)": 372,
+                  "Effeciency (Wh/KM)": 235
+                },
+                {
+                  "Brand": "Volvo",
+                  "Top Speed(KM/H)": 180,
+                  "Range(KM)": 375,
+                  "Effeciency (Wh/KM)": 200
+                },
+                {
+                  "Brand": "Ford",
+                  "Top Speed(KM/H)": 180,
+                  "Range(KM)": 395,
+                  "Effeciency (Wh/KM)": 202
+                },
+                {
+                  "Brand": "BMW",
+                  "Top Speed(KM/H)": 173,
+                  "Range(KM)": 319,
+                  "Effeciency (Wh/KM)": 178
+                },
+                {
+                  "Brand": "Mercedes",
+                  "Top Speed(KM/H)": 173,
+                  "Range(KM)": 350,
+                  "Effeciency (Wh/KM)": 220
+                },
+                {
+                  "Brand": "Nissan",
+                  "Top Speed(KM/H)": 168,
+                  "Range(KM)": 328,
+                  "Effeciency (Wh/KM)": 195
                 }
-            ]
+              ]
         }
     ]
 }
