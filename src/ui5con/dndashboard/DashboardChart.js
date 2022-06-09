@@ -17,10 +17,6 @@ sap.ui.define([
 					type: "string",
 					defaultValue: ""
 				},
-				headerFontSize: {
-					type: "string",
-					defaultValue: '1.15rem'
-				},
 				xGrid: {
 					type: "boolean",
 					defaultValue: false
@@ -37,25 +33,9 @@ sap.ui.define([
 					type: "string",
 					defaultValue: "barChart"
 				},
-				steppedLine: {
-					type: "boolean",
-					defaultValue: false
-				},
-				labels: {
-					type: "object",
-					defaultValue: []
-				},
-				radius: {
-					type: "object",
-					defaultValue: ""
-				},
 				enableFilledLine: {
 					type: "boolean",
 					defaultValue: false
-				},
-				borderColor: {
-					type: "object",
-					defaultValue: []
 				},
 				xAxisLabel: {
 					type: "string",
@@ -68,10 +48,6 @@ sap.ui.define([
 				y2AxisLabel: {
 					type: "string",
 					defaultValue: ""
-				},
-				size: {
-					type: "string",
-					defaultValue: "4x4"
 				},
 				measure: {
 					type: "object",
@@ -89,115 +65,7 @@ sap.ui.define([
 					type: "object",
 					defaultValue: []
 				},
-				cardType: {
-					type: "string",
-					defaultValue: "chart" //chart //info //numeric // radial //measureBlock
-				},
-				info: {
-					type: "string",
-					defaultValue: "N/A"
-				},
-				mesL: {
-					type: "string",
-					defaultValue: ""
-				},
-				mesR: {
-					type: "string",
-					defaultValue: ""
-				},
-				labL: {
-					type: "string",
-					defaultValue: ""
-				},
-				labR: {
-					type: "string",
-					defaultValue: ""
-				},
-				radialPerc: {
-					type: "string",
-					defaultValue: ""
-				},
-				radialColor: {
-					type: "string",
-					defaultValue: ""
-				},
-				radialSummaryBase: {
-					type: "string",
-					defaultValue: "Total"
-				},
-				radialSummaryValue: {
-					type: "string",
-					defaultValue: "Sum Achieved"
-				},
-				measureBlock: {
-					type: "object",
-					defaultValue: []
-				},
-				progressVisible: {
-					type: "boolean",
-					defaultValue: true
-				},
-				cutOutPercentage: { //Only Applied to doughnut chart
-					type: "float",
-					defaultValue: 70
-				},
-				panDirection: {
-					type: "string",
-					defaultValue: 'x'
-				},
-				zoomDirection: {
-					type: "string",
-					defaultValue: 'x'
-				},
-				zoomEnabled: {
-					type: "boolean",
-					defaultValue: false
-				},
-				showBorder: {
-					type: "boolean",
-					defaultValue: true
-				},
-				fitToParent: {
-					type: "boolean",
-					defaultValue: false
-				},
-				draggable: {
-					type: "boolean",
-					defaultValue: false
-				},
-				_chart: {
-					type: "string",
-					defaultValue: ""
-				},
 				showLegend: {
-					type: "boolean",
-					defaultValue: true
-				},
-				measureChartType: {
-					type: "object",
-					defaultValue: ""
-				},
-				measureYAxis: {
-					type: "object",
-					defaultValue: ["y1","y1","y1","y1","y1","y1","y1","y1","y1","y1","y1","y1","y1","y1"]
-				},
-				stacked: {
-					type: "boolean",
-					defaultValue: false
-				},
-				background: {
-					type: "string",
-					defaultValue: "#fff"
-				},
-				sizeInPerc: {
-					type: "boolean",
-					defaultValue: false
-				},
-				renderBare: {
-					type: "boolean",
-					defaultValue: false
-				},
-				showULTitle: {
 					type: "boolean",
 					defaultValue: true
 				},
@@ -205,33 +73,9 @@ sap.ui.define([
 					type: "boolean",
 					defaultValue: false
 				},
-				dataPointSize: {
-					type: "float",
-					defaultValue: 5
-				},
 				legendPosition: {
 					type: "string",
 					defaultValue: 'top'
-				},
-				resizable: {
-					type: "boolean",
-					defaultValue: false
-				},
-				infoIcon: {
-					type: "string",
-					defaultValue: null
-				},
-				infoIconColor: {
-					type: "string",
-					defaultValue: 'grey'
-				},
-				infoText: {
-					type: "string",
-					defaultValue: ''
-				},
-				infoUOM: {
-					type: "string",
-					defaultValue: ''
 				},
 				smartNumberFormat: {
 					type: "boolean",
@@ -256,10 +100,6 @@ sap.ui.define([
 				dataPointColor: {
 					type: "string",
 					defaultValue: 'grey'
-				},
-				borderRadius: {
-					type: "string",
-					defaultValue: '0px'
 				}
 			},
 			events: {
