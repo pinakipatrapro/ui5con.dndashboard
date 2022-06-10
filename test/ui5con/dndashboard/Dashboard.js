@@ -9,26 +9,9 @@ sap.ui.define([
 	"use strict";
 
 	var model = new sap.ui.model.json.JSONModel('./test-resources/ui5con/dndashboard//helper/Dashboard.json');
-	var DashboardColor = library.ExampleColor;
-	let dashboard = new Dashboard({
-		editable: false,
-		height:"80vh",
-		header : new sap.m.Toolbar({
-			content : [
-				new sap.m.Title({text:"My New Dashboard"}),
-				new sap.m.ToolbarSpacer(),
-				new sap.m.Button({
-					text:"Toggle Edit",
-					icon:"sap-icon://edit",
-					press : (oEvent)=>{
-						oEvent.getSource().getParent().getParent().setEditable(!oEvent.getSource().getParent().getParent().getEditable())
-					}
-				})
-			]
-		}),
-		tiles : {
-			path:"/tiles",
-			template: new DashboardTile({
+	var factoryFunction = function(sId,oContext){
+		if(oContext.getProperty("cardType")==='dndChart'){
+			return new DashboardTile({
 				"posx":"{posx}",
 				"posy":"{posy}",
 				"width": "{width}",
@@ -63,6 +46,78 @@ sap.ui.define([
             
 				})
 			})
+		} else if(oContext.getProperty("cardType")==='image'){
+			return new DashboardTile({
+				"posx":"{posx}",
+				"posy":"{posy}",
+				"width": "{width}",
+				"height":"{height}",
+				"content": new sap.m.Image({
+					backgroundSize:"contain",
+					height:"4rem",
+					src:"https://blogs.sap.com/wp-content/uploads/2021/06/2021-UI5con_onAir_eMail-Header_general.png"
+				})
+			})
+		}else if(oContext.getProperty("cardType")==='select'){
+			return new DashboardTile({
+				"posx":"{posx}",
+				"posy":"{posy}",
+				"width": "{width}",
+				"height":"{height}",
+				"content": new sap.m.VBox({
+					items : [
+						new sap.m.Label({
+							text:"{text}"
+						}),
+						new sap.m.ComboBox({
+							width:"100%",
+							items : {
+								path:"items",
+								template: new sap.ui.core.Item({
+									text:"{name}"
+								})
+							}
+						})
+					]
+				})
+			})
+		}else if(oContext.getProperty("cardType")==='list'){
+			return new DashboardTile({
+				"posx":"{posx}",
+				"posy":"{posy}",
+				"width": "{width}",
+				"height":"{height}",
+				"content": new sap.m.List({
+					mode:"MultiSelect",
+					items : {
+						path:"items",
+						template: new sap.m.StandardListItem({
+							title:"{name}"
+						})
+					}
+				})
+			})
+		}
+	}
+	let dashboard = new Dashboard({
+		editable: false,
+		height:"80vh",
+		header : new sap.m.Toolbar({
+			content : [
+				new sap.m.Title({text:"My New Dashboard"}),
+				new sap.m.ToolbarSpacer(),
+				new sap.m.Button({
+					text:"Toggle Edit",
+					icon:"sap-icon://edit",
+					press : (oEvent)=>{
+						oEvent.getSource().getParent().getParent().setEditable(!oEvent.getSource().getParent().getParent().getEditable())
+					}
+				})
+			]
+		}),
+		tiles : {
+			path:"/tiles",
+			factory: factoryFunction
 		}
 	});
 	dashboard.addStyleClass('sapUiSmallMargin')

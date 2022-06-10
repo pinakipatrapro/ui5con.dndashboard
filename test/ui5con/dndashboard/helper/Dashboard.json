@@ -1,10 +1,10 @@
 {
     "tiles":[
         {
-            "name":"1",
-            "posx":0,
+            "cardType":"dndChart",
+            "posx":2,
             "posy":0,
-            "width":4,
+            "width":3,
             "height":6,
             "title": "Radar Chart",
             "chartType": "radialBarChart",
@@ -71,8 +71,8 @@
         },
         
         {
-          "name":"1",
-          "posx":4,
+          "cardType":"dndChart",
+          "posx":5,
           "posy":0,
           "width":4,
           "height":6,
@@ -288,12 +288,12 @@
           ]
         },
         {
-          "name":"1",
-          "posx":8,
+          "cardType":"dndChart",
+          "posx":9,
           "posy":0,
-          "width":4,
+          "width":3,
           "height":6,
-          "title": "Radar Chart",
+          "title": "Bar Chart",
           "chartType": "barChart",
           "xGrid": true,
           "yGrid": true,
@@ -357,10 +357,10 @@
           }]
         },
         {
-          "name":"1",
-          "posx":0,
+          "cardType":"dndChart",
+          "posx":2,
           "posy":6,
-          "width":5,
+          "width":4,
           "height":5,
           "title": "Scatter Chart",
           "chartType": "scatterChart",
@@ -491,10 +491,10 @@
           }]
         },
         {
-          "name":"1",
-          "posx":6,
+          "cardType":"dndChart",
+          "posx":7,
           "posy":6,
-          "width":7,
+          "width":6,
           "height":5,
           "title": "Bubble Chart",
           "chartType": "bubbleChart",
@@ -1086,6 +1086,138 @@
                 "country": "Oceania"
             }
         ]
+        },
+        {
+          "cardType":"image",
+          "posx":0,
+          "posy":0,
+          "width":2,
+          "height":1
+        },
+        {
+          "cardType":"select",
+          "posx":0,
+          "posy":1,
+          "width":2,
+          "height":1,
+          "text":"Select Chart Type"
+        },
+        {
+          "cardType":"select",
+          "posx":0,
+          "posy":2,
+          "width":2,
+          "height":1,
+          "text":"Select Color Theme",
+          "items":[
+            {
+              "name":"UI5Con Theme",
+              "properties":[]
+            },
+            {
+              "name":"UI5 Standard",
+              "properties":[]
+            }
+          ]
+        },
+        {
+          "cardType":"list",
+          "posx":0,
+          "posy":3,
+          "width":2,
+          "height":8,
+          "text":"Select Car Model",
+          "items":[{
+            "name": "CL-Class",
+            "key": "3350836f-37b6-4e7b-a0df-957432475f0f"
+          }, {
+            "name": "X5 M",
+            "key": "f5a7a12a-24ab-42a9-be99-273763f723c8"
+          }, {
+            "name": "Express 2500",
+            "key": "3d3b623b-040c-4cbd-814b-1f0f3206ab5d"
+          }, {
+            "name": "Impreza",
+            "key": "f119357f-50f4-464d-84d9-4877db3021a1"
+          }, {
+            "name": "Stratus",
+            "key": "2224f265-1cf6-4c71-86cf-8045cf37f45f"
+          }, {
+            "name": "Beretta",
+            "key": "11a3791b-34a9-47f5-93e1-56e9ae390cf4"
+          }, {
+            "name": "Prelude",
+            "key": "b0d4684e-72e7-4723-aa10-676f9c2c173f"
+          }, {
+            "name": "Avenger",
+            "key": "18cd4c0c-3d4e-46ec-96bc-325dee410ff1"
+          }, {
+            "name": "Ram 3500",
+            "key": "8f2ec9d1-0696-494a-9368-02f669c4dda2"
+          }, {
+            "name": "Taurus",
+            "key": "a9500249-ac4a-444b-b2e6-de0a170ff49d"
+          }, {
+            "name": "Explorer",
+            "key": "188dbbf9-f014-4865-bbcf-dc588a52f8e2"
+          }, {
+            "name": "Odyssey",
+            "key": "b87fb9b9-8ad6-43be-8729-b930cab6d845"
+          }, {
+            "name": "Esteem",
+            "key": "5917aa57-17a6-4ede-a0b1-a6725415bbfc"
+          }, {
+            "name": "S-Type",
+            "key": "605a7d55-eb1d-41e9-86c8-ca1d94b42046"
+          }, {
+            "name": "Tracer",
+            "key": "3123017c-5cfa-4357-a340-dc8e02f44e0b"
+          }, {
+            "name": "599 GTB Fiorano",
+            "key": "94b1ebc5-f732-4d4c-bbe4-c3d8f851c4f6"
+          }, {
+            "name": "QX",
+            "key": "1782892c-01ca-47d9-9c2f-d28388f9094f"
+          }, {
+            "name": "Charger",
+            "key": "899c229e-fc25-4974-8a38-41bc126a1547"
+          }, {
+            "name": "Viper",
+            "key": "06d36003-a864-44f1-aecd-9fba90a62b52"
+          }, {
+            "name": "Prius",
+            "key": "7ada39d8-d588-4bbd-ad1b-55910a6cfc94"
+          }, {
+            "name": "V40",
+            "key": "e2774e97-64c6-4270-a32a-83e32de9ee28"
+          }, {
+            "name": "Samurai",
+            "key": "d54a7fb1-bb20-48a1-addd-40ab813a6d88"
+          }, {
+            "name": "Sunbird",
+            "key": "78fa4c6c-55fd-4ee2-9f00-3a6b14fe4aa5"
+          }, {
+            "name": "Canyon",
+            "key": "a0de9389-0723-4681-8ecd-05362d877718"
+          }, {
+            "name": "Cooper",
+            "key": "10537acf-a03b-4abb-bcce-eb78da96a026"
+          }, {
+            "name": "3 Series",
+            "key": "676b4366-0dfe-4695-9836-322ddbace2a9"
+          }, {
+            "name": "TL",
+            "key": "e3ccde4a-c0c8-42b6-a2b7-659f3ee50883"
+          }, {
+            "name": "Flex",
+            "key": "54cd96a6-cf87-40b1-a780-ad4638fd1493"
+          }, {
+            "name": "Pacifica",
+            "key": "a277cb1f-4b22-4c56-97ae-03139bac6d92"
+          }, {
+            "name": "E250",
+            "key": "385ca38b-ff2e-4355-93a0-03d799caa1f7"
+          }]
         }
     ]
 }
