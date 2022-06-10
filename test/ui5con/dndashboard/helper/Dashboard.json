@@ -2,12 +2,12 @@
     "tiles":[
         {
             "cardType":"dndChart",
-            "posx":2,
+            "posx":9,
             "posy":0,
             "width":3,
             "height":6,
             "title": "Radar Chart",
-            "chartType": "radialBarChart",
+            "chartType": "radarChart",
             "xGrid": true,
             "yGrid": true,
             "darkMode": true,
@@ -76,7 +76,7 @@
           "posy":0,
           "width":4,
           "height":6,
-          "title": "Stacked Column",
+          "title": "Line Chart",
           "chartType": "lineChart",
           "xGrid": true,
           "yGrid": false,
@@ -289,7 +289,7 @@
         },
         {
           "cardType":"dndChart",
-          "posx":9,
+          "posx":2,
           "posy":0,
           "width":3,
           "height":6,
@@ -1092,7 +1092,8 @@
           "posx":0,
           "posy":0,
           "width":2,
-          "height":1
+          "height":1,
+          "url":"https://blogs.sap.com/wp-content/uploads/2021/06/2021-UI5con_onAir_eMail-Header_general.png"
         },
         {
           "cardType":"select",

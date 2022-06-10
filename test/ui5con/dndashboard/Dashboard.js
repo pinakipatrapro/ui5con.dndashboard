@@ -53,9 +53,8 @@ sap.ui.define([
 				"width": "{width}",
 				"height":"{height}",
 				"content": new sap.m.Image({
-					backgroundSize:"contain",
 					height:"4rem",
-					src:"https://blogs.sap.com/wp-content/uploads/2021/06/2021-UI5con_onAir_eMail-Header_general.png"
+					src:"{url}"
 				})
 			})
 		}else if(oContext.getProperty("cardType")==='select'){
