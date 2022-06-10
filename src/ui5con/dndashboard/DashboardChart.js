@@ -100,6 +100,10 @@ sap.ui.define([
 				dataPointColor: {
 					type: "string",
 					defaultValue: 'grey'
+				},
+				stacked:{
+					type: "boolean",
+					defaultValue: true
 				}
 			},
 			events: {

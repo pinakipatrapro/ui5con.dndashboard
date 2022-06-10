@@ -60,6 +60,7 @@ sap.ui.define([
                     align: oControl.getLegendPosition()
                 },
                 series: {
+                    stack: oControl.getStacked(),
                     dataLabels: {
                         visible: oControl.getShowDataPoints(),
                         formatter: (value) => oControl.smartNumberFormat(value, 1, oControl.getSmartNumberFormat())
@@ -85,7 +86,7 @@ sap.ui.define([
         },
         createTheme: function (oControl) {
             var whiteIfDarkMode = oControl.getDarkMode() ? 'white' : '#000000';
-            var whiteIfDarkModeTransparent = '#cecece'
+            var whiteIfDarkModeTransparent = '#cecece1c'
             return {
                 chart: {
                     backgroundColor: 'rgba(0,0,0,0)',

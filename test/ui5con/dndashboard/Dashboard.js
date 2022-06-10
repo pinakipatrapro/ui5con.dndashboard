@@ -11,7 +11,7 @@ sap.ui.define([
 	var model = new sap.ui.model.json.JSONModel('./test-resources/ui5con/dndashboard//helper/Dashboard.json');
 	var DashboardColor = library.ExampleColor;
 	let dashboard = new Dashboard({
-		editable: true,
+		editable: false,
 		height:"80vh",
 		header : new sap.m.Toolbar({
 			content : [
@@ -58,7 +58,8 @@ sap.ui.define([
 					showDataPoints : "{showDataPoints}",
 					dataPointColor : "{dataPointColor}",
 					y2AxisUOM : "{y2AxisUOM}",
-					y2AxisLabel : "{y2AxisLabel}"
+					y2AxisLabel : "{y2AxisLabel}",
+					stacked : "{stacked}"
             
 				})
 			})

@@ -5,107 +5,1087 @@
             "posx":0,
             "posy":0,
             "width":4,
-            "height":8,
-            "title": "Radar Chart - Top Cars By Effeciency & Range",
-            "chartType": "radarChart",
+            "height":6,
+            "title": "Radar Chart",
+            "chartType": "radialBarChart",
             "xGrid": true,
             "yGrid": true,
             "darkMode": true,
             "showLegend": true,
             "legendPosition": "bottom",
             "enableFilledLine": true,
-            "dataPointColor": "teal",
+            "dataPointColor": "grey",
             "measureColour": [
-                "#0088FE55",
-                "#00C49F55",
-                "#FFBB2855",
-                "#FF8042AB"
+              "#efa03b",
+              "#fe5b3a",
+              "#afafaf",
+              "#afafaf"
             ],
-            "showDataPoints": true,
+            "showDataPoints": false,
             "smartNumberFormat": true,
             "measure": [
-                "Top Speed(KM/H)",
-                "Range(KM)",
-                "Effeciency (Wh/KM)"
+                "High",
+                "Medium",
+                "Low"
             ],
             "dimension": [
-                "Brand"
+                "Product"
                 
             ],
-            "data": [
-                {
-                  "Brand": "Porsche",
-                  "Top Speed(KM/H)": 254,
-                  "Range(KM)": 388,
-                  "Effeciency (Wh/KM)": 209
-                },
-                {
-                  "Brand": "Lucid",
-                  "Top Speed(KM/H)": 250,
-                  "Range(KM)": 610,
-                  "Effeciency (Wh/KM)": 180
-                },
-                {
-                  "Brand": "Tesla",
-                  "Top Speed(KM/H)": 244,
-                  "Range(KM)": 501,
-                  "Effeciency (Wh/KM)": 201
-                },
-                {
-                  "Brand": "Polestar",
-                  "Top Speed(KM/H)": 210,
-                  "Range(KM)": 400,
-                  "Effeciency (Wh/KM)": 181
-                },
-                {
-                  "Brand": "Audi",
-                  "Top Speed(KM/H)": 200,
-                  "Range(KM)": 357,
-                  "Effeciency (Wh/KM)": 225
-                },
-                {
-                  "Brand": "Jaguar",
-                  "Top Speed(KM/H)": 200,
-                  "Range(KM)": 365,
-                  "Effeciency (Wh/KM)": 232
-                },
-                {
-                  "Brand": "Byton",
-                  "Top Speed(KM/H)": 190,
-                  "Range(KM)": 372,
-                  "Effeciency (Wh/KM)": 235
-                },
-                {
-                  "Brand": "Volvo",
-                  "Top Speed(KM/H)": 180,
-                  "Range(KM)": 375,
-                  "Effeciency (Wh/KM)": 200
-                },
-                {
-                  "Brand": "Ford",
-                  "Top Speed(KM/H)": 180,
-                  "Range(KM)": 395,
-                  "Effeciency (Wh/KM)": 202
-                },
-                {
-                  "Brand": "BMW",
-                  "Top Speed(KM/H)": 173,
-                  "Range(KM)": 319,
-                  "Effeciency (Wh/KM)": 178
-                },
-                {
-                  "Brand": "Mercedes",
-                  "Top Speed(KM/H)": 173,
-                  "Range(KM)": 350,
-                  "Effeciency (Wh/KM)": 220
-                },
-                {
-                  "Brand": "Nissan",
-                  "Top Speed(KM/H)": 168,
-                  "Range(KM)": 328,
-                  "Effeciency (Wh/KM)": 195
-                }
-              ]
+            "data": [{
+              "Product": "Ryan, Weissnat and Metz",
+              "High": 70,
+              "Medium": 57,
+              "Low": 94,
+              "gender": "Female",
+              "ip_address": "233.14.225.186"
+            }, {
+              "Product": "Yundt LLC",
+              "High": 64,
+              "Medium": 93,
+              "Low": 89,
+              "gender": "Male",
+              "ip_address": "164.219.149.175"
+            }, {
+              "Product": "Weissnat Inc",
+              "High": 91,
+              "Medium": 66,
+              "Low": 81,
+              "gender": "Male",
+              "ip_address": "99.134.225.49"
+            }, {
+              "Product": "Ferry Inc",
+              "High": 74,
+              "Medium": 51,
+              "Low": 93,
+              "gender": "Male",
+              "ip_address": "73.182.28.93"
+            }, {
+              "Product": "Turcotte LLC",
+              "High": 96,
+              "Medium": 53,
+              "Low": 65,
+              "gender": "Female",
+              "ip_address": "152.81.110.138"
+            }]
+        },
+        
+        {
+          "name":"1",
+          "posx":4,
+          "posy":0,
+          "width":4,
+          "height":6,
+          "title": "Stacked Column",
+          "chartType": "lineChart",
+          "xGrid": true,
+          "yGrid": false,
+          "darkMode": true,
+          "showLegend": true,
+          "legendPosition": "bottom",
+          "enableFilledLine": true,
+          "stacked":false,
+          "dataPointColor": "grey",
+          "yAxisLabel":"Amount",
+          "yAxisUOM":" EUR",
+          "measureColour": [
+              "#efa03b",
+              "#fe5b3a",
+              "#afafaf",
+              "#7a5c3e"
+          ],
+          "showDataPoints": true,
+          "smartNumberFormat": true,
+          "measure": [
+              "Value"
+          ],
+          "dimension": [
+              "Quarter",
+              "Type"
+              
+          ],
+          "data": [
+            {
+              "Quarter": "Q1-2018",
+              "Type": "Budget",
+              "Value": 35614
+            },
+            {
+              "Quarter": "Q2-2018",
+              "Type": "Budget",
+              "Value": 20987
+            },
+            {
+              "Quarter": "Q3-2018",
+              "Type": "Budget",
+              "Value": 33999
+            },
+            {
+              "Quarter": "Q4-2018",
+              "Type": "Budget",
+              "Value": 24442
+            },
+            {
+              "Quarter": "Q1-2019",
+              "Type": "Budget",
+              "Value": 30422
+            },
+            {
+              "Quarter": "Q2-2019",
+              "Type": "Budget",
+              "Value": 16053
+            },
+            {
+              "Quarter": "Q3-2019",
+              "Type": "Budget",
+              "Value": 61082
+            },
+            {
+              "Quarter": "Q4-2019",
+              "Type": "Budget",
+              "Value": 14861
+            },
+            {
+              "Quarter": "Q1-2020",
+              "Type": "Budget",
+              "Value": 90401
+            },
+            {
+              "Quarter": "Q2-2020",
+              "Type": "Budget",
+              "Value": 60822
+            },
+            {
+              "Quarter": "Q3-2020",
+              "Type": "Budget",
+              "Value": 23923
+            },
+            {
+              "Quarter": "Q4-2020",
+              "Type": "Budget",
+              "Value": 18623
+            },
+            {
+              "Quarter": "Q1-2018",
+              "Type": "Expense",
+              "Value": 28225
+            },
+            {
+              "Quarter": "Q2-2018",
+              "Type": "Expense",
+              "Value": 80459
+            },
+            {
+              "Quarter": "Q3-2018",
+              "Type": "Expense",
+              "Value": 87162
+            },
+            {
+              "Quarter": "Q4-2018",
+              "Type": "Expense",
+              "Value": 55271
+            },
+            {
+              "Quarter": "Q1-2019",
+              "Type": "Expense",
+              "Value": 23329
+            },
+            {
+              "Quarter": "Q2-2019",
+              "Type": "Expense",
+              "Value": 81629
+            },
+            {
+              "Quarter": "Q3-2019",
+              "Type": "Expense",
+              "Value": 75617
+            },
+            {
+              "Quarter": "Q4-2019",
+              "Type": "Expense",
+              "Value": 39707
+            },
+            {
+              "Quarter": "Q1-2020",
+              "Type": "Expense",
+              "Value": 85968
+            },
+            {
+              "Quarter": "Q2-2020",
+              "Type": "Expense",
+              "Value": 42293
+            },
+            {
+              "Quarter": "Q3-2020",
+              "Type": "Expense",
+              "Value": 65916
+            },
+            {
+              "Quarter": "Q4-2020",
+              "Type": "Expense",
+              "Value": 91925
+            },
+            {
+              "Quarter": "Q1-2018",
+              "Type": "Debt",
+              "Value": 36072
+            },
+            {
+              "Quarter": "Q2-2018",
+              "Type": "Debt",
+              "Value": 74291
+            },
+            {
+              "Quarter": "Q3-2018",
+              "Type": "Debt",
+              "Value": 90191
+            },
+            {
+              "Quarter": "Q4-2018",
+              "Type": "Debt",
+              "Value": 98748
+            },
+            {
+              "Quarter": "Q1-2019",
+              "Type": "Debt",
+              "Value": 18267
+            },
+            {
+              "Quarter": "Q2-2019",
+              "Type": "Debt",
+              "Value": 27740
+            },
+            {
+              "Quarter": "Q3-2019",
+              "Type": "Debt",
+              "Value": 26616
+            },
+            {
+              "Quarter": "Q4-2019",
+              "Type": "Debt",
+              "Value": 81830
+            },
+            {
+              "Quarter": "Q1-2020",
+              "Type": "Debt",
+              "Value": 32034
+            },
+            {
+              "Quarter": "Q2-2020",
+              "Type": "Debt",
+              "Value": 97483
+            },
+            {
+              "Quarter": "Q3-2020",
+              "Type": "Debt",
+              "Value": 50150
+            },
+            {
+              "Quarter": "Q4-2020",
+              "Type": "Debt",
+              "Value": 65004
+            }
+          ]
+        },
+        {
+          "name":"1",
+          "posx":8,
+          "posy":0,
+          "width":4,
+          "height":6,
+          "title": "Radar Chart",
+          "chartType": "barChart",
+          "xGrid": true,
+          "yGrid": true,
+          "darkMode": true,
+          "showLegend": true,
+          "legendPosition": "bottom",
+          "enableFilledLine": true,
+          "dataPointColor": "white",
+          "measureColour": [
+            "#efa03b",
+            "#fe5b3a",
+            "#afafaf",
+            "#afafaf"
+          ],
+          "showDataPoints": true,
+          "smartNumberFormat": true,
+          "measure": [
+              "High",
+              "Medium",
+              "Low"
+          ],
+          "dimension": [
+              "Product"
+              
+          ],
+          "data": [{
+            "Product": "Ryan, Weissnat and Metz",
+            "High": 70,
+            "Medium": 57,
+            "Low": 94,
+            "gender": "Female",
+            "ip_address": "233.14.225.186"
+          }, {
+            "Product": "Yundt LLC",
+            "High": 64,
+            "Medium": 93,
+            "Low": 89,
+            "gender": "Male",
+            "ip_address": "164.219.149.175"
+          }, {
+            "Product": "Weissnat Inc",
+            "High": 91,
+            "Medium": 66,
+            "Low": 81,
+            "gender": "Male",
+            "ip_address": "99.134.225.49"
+          }, {
+            "Product": "Ferry Inc",
+            "High": 74,
+            "Medium": 51,
+            "Low": 93,
+            "gender": "Male",
+            "ip_address": "73.182.28.93"
+          }, {
+            "Product": "Turcotte LLC",
+            "High": 96,
+            "Medium": 53,
+            "Low": 65,
+            "gender": "Female",
+            "ip_address": "152.81.110.138"
+          }]
+        },
+        {
+          "name":"1",
+          "posx":0,
+          "posy":6,
+          "width":5,
+          "height":5,
+          "title": "Scatter Chart",
+          "chartType": "scatterChart",
+          "xGrid": true,
+          "yGrid": true,
+          "darkMode": true,
+          "showLegend": true,
+          "legendPosition": "bottom",
+          "enableFilledLine": true,
+          "yAxisLabel":"Height",
+          "xAxisLabel":"Weight",
+          "dataPointColor": "grey",
+          "measureColour": [
+            "#efa03b",
+            "#afafaf",
+            "#fe5b3a",
+            "#afafaf"
+          ],
+          "showDataPoints": true,
+          "smartNumberFormat": true,
+          "measure": [
+            "weight",
+            "height"
+          ],
+          "dimension": [
+              "gender"
+          ],
+          "data": [{
+            "gender": "Male",
+            "height": 198,
+            "weight": 188
+          }, {
+            "gender": "Male",
+            "height": 185,
+            "weight": 190
+          }, {
+            "gender": "Male",
+            "height": 183,
+            "weight": 186
+          }, {
+            "gender": "Male",
+            "height": 151,
+            "weight": 184
+          }, {
+            "gender": "Female",
+            "height": 191,
+            "weight": 161
+          }, {
+            "gender": "Female",
+            "height": 161,
+            "weight": 187
+          }, {
+            "gender": "Male",
+            "height": 194,
+            "weight": 198
+          }, {
+            "gender": "Female",
+            "height": 166,
+            "weight": 166
+          }, {
+            "gender": "Male",
+            "height": 155,
+            "weight": 152
+          }, {
+            "gender": "Male",
+            "height": 189,
+            "weight": 151
+          }, {
+            "gender": "Female",
+            "height": 185,
+            "weight": 156
+          }, {
+            "gender": "Male",
+            "height": 185,
+            "weight": 200
+          }, {
+            "gender": "Female",
+            "height": 166,
+            "weight": 159
+          }, {
+            "gender": "Male",
+            "height": 168,
+            "weight": 179
+          }, {
+            "gender": "Male",
+            "height": 194,
+            "weight": 175
+          }, {
+            "gender": "Female",
+            "height": 170,
+            "weight": 168
+          }, {
+            "gender": "Male",
+            "height": 182,
+            "weight": 188
+          }, {
+            "gender": "Female",
+            "height": 195,
+            "weight": 160
+          }, {
+            "gender": "Male",
+            "height": 157,
+            "weight": 194
+          }, {
+            "gender": "Male",
+            "height": 183,
+            "weight": 162
+          }, {
+            "gender": "Female",
+            "height": 156,
+            "weight": 160
+          }, {
+            "gender": "Male",
+            "height": 159,
+            "weight": 164
+          }, {
+            "gender": "Male",
+            "height": 186,
+            "weight": 156
+          }, {
+            "gender": "Male",
+            "height": 183,
+            "weight": 151
+          }, {
+            "gender": "Female",
+            "height": 193,
+            "weight": 192
+          }]
+        },
+        {
+          "name":"1",
+          "posx":6,
+          "posy":6,
+          "width":7,
+          "height":5,
+          "title": "Bubble Chart",
+          "chartType": "bubbleChart",
+          "xGrid": true,
+          "yGrid": true,
+          "darkMode": true,
+          "showLegend": false,
+          "legendPosition": "bottom",
+          "enableFilledLine": false,
+          "yAxisLabel":"Life Span",
+          "xAxisLabel":"Land Area",
+          "dataPointColor": "grey",
+          "measureColour": [
+            "#efa03b",
+            "#afafaf",
+            "#fe5b3a",
+            "#afafaf"
+          ],
+          "showDataPoints": true,
+          "smartNumberFormat": true,
+          "measure": [
+              "x",
+              "y",
+              "r"
+          ],
+          "dimension": [
+              "label",
+              "country"
+          ],
+          "data": [
+            {
+                "x": 4200,
+                "y": 70.35,
+                "r": 32209101,
+                "label": "Morocco",
+                "country": "Africa"
+            },
+            {
+                "x": 4200,
+                "y": 70.71,
+                "r": 76117421,
+                "label": "Egypt",
+                "country": "Africa"
+            },
+            {
+                "x": 5900,
+                "y": 56.46,
+                "r": 1355246,
+                "label": "Gabon",
+                "country": "Africa"
+            },
+            {
+                "x": 6600,
+                "y": 72.74,
+                "r": 32129324,
+                "label": "Algeria",
+                "country": "Africa"
+            },
+            {
+                "x": 6700,
+                "y": 76.28,
+                "r": 5631585,
+                "label": "Libya",
+                "country": "Africa"
+            },
+            {
+                "x": 7100,
+                "y": 74.66,
+                "r": 9974722,
+                "label": "Tunisia",
+                "country": "Africa"
+            },
+            {
+                "x": 10500,
+                "y": 69.28,
+                "r": 1096585,
+                "label": "Trinidad and Tobago",
+                "country": "Africa"
+            },
+            {
+                "x": 12800,
+                "y": 72.09,
+                "r": 1220481,
+                "label": "Mauritius",
+                "country": "Africa"
+            },
+            {
+                "x": 18200,
+                "y": 78.68,
+                "r": 396851,
+                "label": "Malta",
+                "country": "Africa"
+            },
+            {
+                "x": 4800,
+                "y": 74.64,
+                "r": 6191368,
+                "label": "Paraguay",
+                "country": "America"
+            },
+            {
+                "x": 4900,
+                "y": 70.92,
+                "r": 6587541,
+                "label": "El Salvador",
+                "country": "America"
+            },
+            {
+                "x": 5600,
+                "y": 69.22,
+                "r": 2754430,
+                "label": "Peru",
+                "country": "America"
+            },
+            {
+                "x": 5800,
+                "y": 74.06,
+                "r": 2501738,
+                "label": "Venezuela",
+                "country": "America"
+            },
+            {
+                "x": 6300,
+                "y": 67.63,
+                "r": 8833634,
+                "label": "Dominican Republic",
+                "country": "America"
+            },
+            {
+                "x": 6500,
+                "y": 67.43,
+                "r": 272945,
+                "label": "Belize",
+                "country": "America"
+            },
+            {
+                "x": 6600,
+                "y": 71.43,
+                "r": 4231077,
+                "label": "Colombia",
+                "country": "America"
+            },
+            {
+                "x": 6900,
+                "y": 72.14,
+                "r": 3000463,
+                "label": "Panama",
+                "country": "America"
+            },
+            {
+                "x": 8100,
+                "y": 71.41,
+                "r": 78410118,
+                "label": "Brazil",
+                "country": "America"
+            },
+            {
+                "x": 9600,
+                "y": 76.63,
+                "r": 3956507,
+                "label": "Costa Rica",
+                "country": "America"
+            },
+            {
+                "x": 9600,
+                "y": 74.94,
+                "r": 4495959,
+                "label": "Mexico",
+                "country": "America"
+            },
+            {
+                "x": 12400,
+                "y": 75.7,
+                "r": 6914475,
+                "label": "Argentina",
+                "country": "America"
+            },
+            {
+                "x": 14500,
+                "y": 75.92,
+                "r": 3399237,
+                "label": "Uruguay",
+                "country": "America"
+            },
+            {
+                "x": 16400,
+                "y": 71.64,
+                "r": 278289,
+                "label": "Barbados",
+                "country": "America"
+            },
+            {
+                "x": 17700,
+                "y": 65.63,
+                "r": 299697,
+                "label": "Bahamas, The",
+                "country": "America"
+            },
+            {
+                "x": 17700,
+                "y": 77.49,
+                "r": 3897960,
+                "label": "Puerto Rico",
+                "country": "America"
+            },
+            {
+                "x": 31500,
+                "y": 79.96,
+                "r": 32507874,
+                "label": "Canada",
+                "country": "America"
+            },
+            {
+                "x": 32100,
+                "y": 77.43,
+                "r": 89302754,
+                "label": "United States",
+                "country": "America"
+            },
+            {
+                "x": 5600,
+                "y": 71.96,
+                "r": 92988000,
+                "label": "China",
+                "country": "Asia"
+            },
+            {
+                "x": 5700,
+                "y": 61.29,
+                "r": 4863169,
+                "label": "Turkmenistan",
+                "country": "Asia"
+            },
+            {
+                "x": 7700,
+                "y": 69.66,
+                "r": 19018924,
+                "label": "Iran",
+                "country": "Asia"
+            },
+            {
+                "x": 7800,
+                "y": 66.07,
+                "r": 1514370,
+                "label": "Kazakhstan",
+                "country": "Asia"
+            },
+            {
+                "x": 8100,
+                "y": 71.41,
+                "r": 14865523,
+                "label": "Thailand",
+                "country": "Asia"
+            },
+            {
+                "x": 9700,
+                "y": 71.95,
+                "r": 23522482,
+                "label": "Malaysia",
+                "country": "Asia"
+            },
+            {
+                "x": 12000,
+                "y": 75.23,
+                "r": 25795938,
+                "label": "Saudi Arabia",
+                "country": "Asia"
+            },
+            {
+                "x": 13100,
+                "y": 72.85,
+                "r": 2903165,
+                "label": "Oman",
+                "country": "Asia"
+            },
+            {
+                "x": 19200,
+                "y": 75.58,
+                "r": 48598170,
+                "label": "Korea, South",
+                "country": "Asia"
+            },
+            {
+                "x": 19200,
+                "y": 73.98,
+                "r": 677886,
+                "label": "Bahrain",
+                "country": "Asia"
+            },
+            {
+                "x": 20800,
+                "y": 79.17,
+                "r": 6199008,
+                "label": "Israel",
+                "country": "Asia"
+            },
+            {
+                "x": 21300,
+                "y": 76.84,
+                "r": 2257549,
+                "label": "Kuwait",
+                "country": "Asia"
+            },
+            {
+                "x": 23200,
+                "y": 73.4,
+                "r": 840290,
+                "label": "Qatar",
+                "country": "Asia"
+            },
+            {
+                "x": 25200,
+                "y": 74.99,
+                "r": 2523915,
+                "label": "United Arab Emirates",
+                "country": "Asia"
+            },
+            {
+                "x": 25300,
+                "y": 77.06,
+                "r": 22749838,
+                "label": "Taiwan",
+                "country": "Asia"
+            },
+            {
+                "x": 27800,
+                "y": 81.53,
+                "r": 4353893,
+                "label": "Singapore",
+                "country": "Asia"
+            },
+            {
+                "x": 29400,
+                "y": 81.04,
+                "r": 52733300,
+                "label": "Japan",
+                "country": "Asia"
+            },
+            {
+                "x": 34200,
+                "y": 81.39,
+                "r": 6855125,
+                "label": "Hong Kong",
+                "country": "Asia"
+            },
+            {
+                "x": 7700,
+                "y": 71.12,
+                "r": 2235555,
+                "label": "Romania",
+                "country": "Europe"
+            },
+            {
+                "x": 8200,
+                "y": 71.75,
+                "r": 7517973,
+                "label": "Bulgaria",
+                "country": "Europe"
+            },
+            {
+                "x": 9800,
+                "y": 66.39,
+                "r": 54378233,
+                "label": "Russia",
+                "country": "Europe"
+            },
+            {
+                "x": 10700,
+                "y": 76.38,
+                "r": 1582395,
+                "label": "Chile",
+                "country": "Europe"
+            },
+            {
+                "x": 11200,
+                "y": 74.14,
+                "r": 4496869,
+                "label": "Croatia",
+                "country": "Europe"
+            },
+            {
+                "x": 11500,
+                "y": 70.86,
+                "r": 2306306,
+                "label": "Latvia",
+                "country": "Europe"
+            },
+            {
+                "x": 12000,
+                "y": 74.16,
+                "r": 38626349,
+                "label": "Poland",
+                "country": "Europe"
+            },
+            {
+                "x": 12500,
+                "y": 73.46,
+                "r": 3607899,
+                "label": "Lithuania",
+                "country": "Europe"
+            },
+            {
+                "x": 14300,
+                "y": 71.38,
+                "r": 1341664,
+                "label": "Estonia",
+                "country": "Europe"
+            },
+            {
+                "x": 14500,
+                "y": 74.19,
+                "r": 5423567,
+                "label": "Slovakia",
+                "country": "Europe"
+            },
+            {
+                "x": 14900,
+                "y": 72.25,
+                "r": 1003237,
+                "label": "Hungary",
+                "country": "Europe"
+            },
+            {
+                "x": 16800,
+                "y": 75.78,
+                "r": 1024617,
+                "label": "Czech Republic",
+                "country": "Europe"
+            },
+            {
+                "x": 17900,
+                "y": 77.35,
+                "r": 1052414,
+                "label": "Portugal",
+                "country": "Europe"
+            },
+            {
+                "x": 19600,
+                "y": 75.93,
+                "r": 2011473,
+                "label": "Slovenia",
+                "country": "Europe"
+            },
+            {
+                "x": 21300,
+                "y": 78.94,
+                "r": 10647529,
+                "label": "Greece",
+                "country": "Europe"
+            },
+            {
+                "x": 23300,
+                "y": 79.37,
+                "r": 40280780,
+                "label": "Spain",
+                "country": "Europe"
+            },
+            {
+                "x": 27700,
+                "y": 79.54,
+                "r": 58057477,
+                "label": "Italy",
+                "country": "Europe"
+            },
+            {
+                "x": 28400,
+                "y": 80.3,
+                "r": 898640,
+                "label": "Sweden",
+                "country": "Europe"
+            },
+            {
+                "x": 28700,
+                "y": 78.54,
+                "r": 22424609,
+                "label": "Germany",
+                "country": "Europe"
+            },
+            {
+                "x": 28700,
+                "y": 79.44,
+                "r": 30424213,
+                "label": "France",
+                "country": "Europe"
+            },
+            {
+                "x": 29000,
+                "y": 78.24,
+                "r": 5214512,
+                "label": "Finland",
+                "country": "Europe"
+            },
+            {
+                "x": 29500,
+                "y": 78.68,
+                "r": 16318199,
+                "label": "Netherlands",
+                "country": "Europe"
+            },
+            {
+                "x": 29600,
+                "y": 78.27,
+                "r": 60270708,
+                "label": "United Kingdom",
+                "country": "Europe"
+            },
+            {
+                "x": 30600,
+                "y": 78.44,
+                "r": 10348276,
+                "label": "Belgium",
+                "country": "Europe"
+            },
+            {
+                "x": 31300,
+                "y": 78.87,
+                "r": 8174762,
+                "label": "Austria",
+                "country": "Europe"
+            },
+            {
+                "x": 31900,
+                "y": 77.36,
+                "r": 3969558,
+                "label": "Ireland",
+                "country": "Europe"
+            },
+            {
+                "x": 31900,
+                "y": 80.18,
+                "r": 293966,
+                "label": "Iceland",
+                "country": "Europe"
+            },
+            {
+                "x": 32200,
+                "y": 77.44,
+                "r": 5413392,
+                "label": "Denmark",
+                "country": "Europe"
+            },
+            {
+                "x": 33800,
+                "y": 80.31,
+                "r": 7450867,
+                "label": "Switzerland",
+                "country": "Europe"
+            },
+            {
+                "x": 2200,
+                "y": 64.56,
+                "r": 5420280,
+                "label": "Papua New Guinea",
+                "country": "Oceania"
+            },
+            {
+                "x": 2700,
+                "y": 61.32,
+                "r": 100798,
+                "label": "Kiribati",
+                "country": "Oceania"
+            },
+            {
+                "x": 5900,
+                "y": 69.2,
+                "r": 880874,
+                "label": "Fiji",
+                "country": "Oceania"
+            },
+            {
+                "x": 14500,
+                "y": 78.75,
+                "r": 108775,
+                "label": "Virgin Islands",
+                "country": "Oceania"
+            },
+            {
+                "x": 23200,
+                "y": 78.49,
+                "r": 1993817,
+                "label": "New Zealand",
+                "country": "Oceania"
+            },
+            {
+                "x": 30700,
+                "y": 80.26,
+                "r": 5991314,
+                "label": "Australia",
+                "country": "Oceania"
+            }
+        ]
         }
     ]
 }
