@@ -1091,9 +1091,17 @@
           "cardType":"image",
           "posx":0,
           "posy":0,
-          "width":2,
+          "width":1,
           "height":1,
-          "url":"https://blogs.sap.com/wp-content/uploads/2021/06/2021-UI5con_onAir_eMail-Header_general.png"
+          "url":"https://i.ibb.co/MMmhNr0/2021-UI5con-on-Air-e-Mail-Header-general-removebg-preview.png"
+        },
+        {
+          "cardType":"button",
+          "posx":1,
+          "posy":0,
+          "width":1,
+          "height":1,
+          "text":"Change Color Scheme"
         },
         {
           "cardType":"select",
