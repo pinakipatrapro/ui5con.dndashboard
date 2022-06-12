@@ -3,9 +3,10 @@ sap.ui.define([
 	"ui5con/dndashboard/Dashboard",
 	"ui5con/dndashboard/DashboardTile",
 	"ui5con/dndashboard/DashboardChart",
+	"ui5con/dndashboard/FunnelChart",
 	"sap/m/Page",
 	"sap/m/App"
-], function(library, Dashboard,DashboardTile,DashboardChart,Page,App) {
+], function(library, Dashboard,DashboardTile,DashboardChart,FunnelChart,Page,App) {
 	"use strict";
 
 	var model = new sap.ui.model.json.JSONModel('./test-resources/ui5con/dndashboard//helper/Dashboard.json');
@@ -94,6 +95,19 @@ sap.ui.define([
 							title:"{name}"
 						})
 					}
+				})
+			})
+		}else if(oContext.getProperty("cardType")==='funnel'){
+			return new DashboardTile({
+				"posx":"{posx}",
+				"posy":"{posy}",
+				"width": "{width}",
+				"height":"{height}",
+				"content": new FunnelChart({
+					measure : "{measure}",
+					dimension : "{dimension}",
+					data : "{data}",
+					measureColour : "{measureColour}"
 				})
 			})
 		}

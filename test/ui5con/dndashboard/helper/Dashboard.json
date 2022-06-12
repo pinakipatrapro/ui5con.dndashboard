@@ -360,7 +360,7 @@
           "cardType":"dndChart",
           "posx":2,
           "posy":6,
-          "width":4,
+          "width":3,
           "height":5,
           "title": "Scatter Chart",
           "chartType": "scatterChart",
@@ -492,9 +492,9 @@
         },
         {
           "cardType":"dndChart",
-          "posx":7,
+          "posx":5,
           "posy":6,
-          "width":6,
+          "width":4,
           "height":5,
           "title": "Bubble Chart",
           "chartType": "bubbleChart",
@@ -1219,6 +1219,64 @@
             "name": "E250",
             "key": "385ca38b-ff2e-4355-93a0-03d799caa1f7"
           }]
+        },
+        {
+          "cardType":"funnel",
+          "posx":9,
+          "posy":6,
+          "width":3,
+          "height":5,
+          "text":"Select Color Theme",
+          "measure": [
+              "value"
+          ],
+          "dimension": [
+              "label",
+              "sublabel"
+          ],
+          "measureColour": [
+            "#efa03b",
+            "#afafaf",
+            "#fe5b3a",
+            "#afafaf"
+          ],
+          "data":[{
+            "label": "Impressions",
+            "sublabel": "Direct",
+            "value": 1700
+            }, {
+            "label": "Impressions",
+            "sublabel": "Social Media",
+            "value": 1900
+            }, {
+            "label": "Impressions",
+            "sublabel": "Ads",
+            "value": 1500
+            }, {
+            "label": "Add To Cart",
+            "sublabel": "Direct",
+            "value": 1200
+            }, {
+            "label": "Add To Cart",
+            "sublabel": "Social Media",
+            "value": 652
+            }, {
+            "label": "Add To Cart",
+            "sublabel": "Ads",
+            "value": 425
+            }, {
+            "label": "Buy",
+            "sublabel": "Direct",
+            "value": 250
+            }, {
+            "label": "Buy",
+            "sublabel": "Social Media",
+            "value": 85
+            }, {
+            "label": "Buy",
+            "sublabel": "Ads",
+            "value": 152
+            }]
         }
     ]
 }
