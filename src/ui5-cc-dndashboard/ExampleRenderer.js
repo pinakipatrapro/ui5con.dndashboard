@@ -28,7 +28,7 @@ sap.ui.define([
 	 */
 	ExampleRenderer.render = function (rm, control) {
 
-		var i18n = Core.getLibraryResourceBundle("ui5con.dndashboard");
+		var i18n = Core.getLibraryResourceBundle("ui5-cc-dndashboard");
 
 		rm.openStart("div", control);
 		if (control.getColor() === ExampleColor.Highlight) {

@@ -1,15 +1,15 @@
 sap.ui.define([
-	"ui5con/dndashboard/library",
-	"ui5con/dndashboard/Dashboard",
-	"ui5con/dndashboard/DashboardTile",
-	"ui5con/dndashboard/DashboardChart",
-	"ui5con/dndashboard/FunnelChart",
+	"ui5-cc-dndashboard/library",
+	"ui5-cc-dndashboard/Dashboard",
+	"ui5-cc-dndashboard/DashboardTile",
+	"ui5-cc-dndashboard/DashboardChart",
+	"ui5-cc-dndashboard/FunnelChart",
 	"sap/m/Page",
 	"sap/m/App"
 ], function(library, Dashboard,DashboardTile,DashboardChart,FunnelChart,Page,App) {
 	"use strict";
 
-	var model = new sap.ui.model.json.JSONModel('./test-resources/ui5con/dndashboard//helper/Dashboard.json');
+	var model = new sap.ui.model.json.JSONModel('./test-resources/ui5-cc-dndashboard//helper/Dashboard.json');
 	var factoryFunction = function(sId,oContext){
 		if(oContext.getProperty("cardType")==='dndChart'){
 			return new DashboardTile({
@@ -167,7 +167,7 @@ sap.ui.define([
 		content : dashboard,
 		customHeader : new sap.m.Toolbar({
 			content : [
-				new sap.m.Title({text:"Test Page for ui5con.dndashboard.Dashboard"}),
+				new sap.m.Title({text:"Test Page for ui5-cc-dndashboard.Dashboard"}),
 				new sap.m.ToolbarSpacer()
 			]
 		})

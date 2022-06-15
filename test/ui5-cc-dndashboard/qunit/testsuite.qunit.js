@@ -2,11 +2,11 @@ sap.ui.define(function() {
 	"use strict";
 
 	return {
-		name: "QUnit TestSuite for ui5con.dndashboard",
+		name: "QUnit TestSuite for ui5-cc-dndashboard",
 		defaults: {
 			bootCore: true,
 			ui5: {
-				libs: "sap.ui.core,ui5con.dndashboard",
+				libs: "sap.ui.core,ui5-cc-dndashboard",
 				theme: "sap_fiori_3",
 				noConflict: true,
 				preload: "auto"
@@ -26,7 +26,7 @@ sap.ui.define(function() {
 			// test file for the Example control
 			Example: {
 				title: "QUnit Test for Example",
-				_alternativeTitle: "QUnit tests: ui5con.dndashboard.Example"
+				_alternativeTitle: "QUnit tests: ui5-cc-dndashboard.Example"
 			}
 		}
 	};

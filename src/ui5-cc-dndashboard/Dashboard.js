@@ -1,7 +1,7 @@
 sap.ui.define([
-	"ui5con/dndashboard/library", 
+	"ui5-cc-dndashboard/library", 
 	"sap/ui/core/Control", 
-	"ui5con/dndashboard/DashboardRenderer",
+	"ui5-cc-dndashboard/DashboardRenderer",
 	"gridstack/dist/gridstack-h5",
 	"sap/ui/dom/includeStylesheet"
 ], function (library, Control, DashboardRenderer,GridStack,includeStylesheet) {
@@ -10,9 +10,9 @@ sap.ui.define([
 
 	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
 
-	var Dashboard = Control.extend("ui5con.dndashboard.Dashboard",  {
+	var Dashboard = Control.extend("ui5-cc-dndashboard.Dashboard",  {
 		metadata: {
-			library: "ui5con.dndashboard",
+			library: "ui5-cc-dndashboard",
 			properties: {
 				editable: {
 					type: "boolean",
@@ -27,9 +27,10 @@ sap.ui.define([
 					defaultValue: "80vh"
 				},
 			},
+			defaultAggregation: "tiles",
 			aggregations:{
 				tiles: {
-					type: "ui5con.dndashboard.DashboardTile",
+					type: "ui5-cc-dndashboard.DashboardTile",
 					multiple: true,
 					visibility: "public"
 				},

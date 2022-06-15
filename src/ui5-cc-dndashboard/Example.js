@@ -2,7 +2,7 @@
  * ${copyright}
  */
 
-// Provides control ui5con.dndashboard.Example.
+// Provides control ui5-cc-dndashboard.Example.
 sap.ui.define([
 	"./library", 
 	"sap/ui/core/Control", 
@@ -14,7 +14,7 @@ sap.ui.define([
 	var ExampleColor = library.ExampleColor;
 
 	/**
-	 * Constructor for a new <code>ui5con.dndashboard.Example</code> control.
+	 * Constructor for a new <code>ui5-cc-dndashboard.Example</code> control.
 	 *
 	 * @param {string} [sId] id for the new control, generated automatically if no id is given
 	 * @param {object} [mSettings] initial settings for the new control
@@ -28,11 +28,11 @@ sap.ui.define([
 	 *
 	 * @constructor
 	 * @public
-	 * @alias ui5con.dndashboard.Example
+	 * @alias ui5-cc-dndashboard.Example
 	 */
-	var Example = Control.extend("ui5con.dndashboard.Example", /** @lends ui5con.dndashboard.Example.prototype */ {
+	var Example = Control.extend("ui5-cc-dndashboard.Example", /** @lends ui5-cc-dndashboard.Example.prototype */ {
 		metadata: {
-			library: "ui5con.dndashboard",
+			library: "ui5-cc-dndashboard",
 			properties: {
 				/**
 				 * The text to display.
@@ -46,7 +46,7 @@ sap.ui.define([
 				 * The color to use (default to "Default" color).
 				 */
 				color: {
-					type: "ui5con.dndashboard.ExampleColor",
+					type: "ui5-cc-dndashboard.ExampleColor",
 					group: "Appearance",
 					defaultValue: ExampleColor.Default
 				}

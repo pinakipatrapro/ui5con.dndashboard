@@ -1,5 +1,5 @@
 {
-  "name": "dndashboard",
+  "name": "ui5-cc-dndashboard",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
@@ -18,9 +18,9 @@
     ]
   },
   "scripts": {
-    "build": "ui5 build --clean-dest",
-    "start": "ui5 serve --open test-resources/ui5con/dndashboard/Example.html",
-    "testsuite": "ui5 serve --open test-resources/ui5con/dndashboard/qunit/testsuite.qunit.html",
+    "build": "ui5 build --clean-dest && copy prod-package.json dist\\resources\\ui5-cc-dndashboard\\package.json",
+    "start": "ui5 serve --open test-resources/ui5-cc-dndashboard/Example.html",
+    "testsuite": "ui5 serve --open test-resources/ui5-cc-dndashboard/qunit/testsuite.qunit.html",
     "test": "karma start --browsers=ChromeHeadless --singleRun=true"
   },
   "license": "UNLICENSED",

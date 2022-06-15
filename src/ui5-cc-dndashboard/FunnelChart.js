@@ -1,7 +1,7 @@
 sap.ui.define([
-	"ui5con/dndashboard/library", 
+	"ui5-cc-dndashboard/library", 
 	"sap/ui/core/Control", 
-	"ui5con/dndashboard/FunnelChartRenderer",
+	"ui5-cc-dndashboard/FunnelChartRenderer",
 	"funnel-graph-js/dist/js/funnel-graph.min.js",
 	"sap/ui/dom/includeStylesheet"
 ], function (library, Control,FunnelChartRenderer ,FunnelGraph,includeStylesheet) {
@@ -12,9 +12,9 @@ sap.ui.define([
 	includeStylesheet(sap.ui.require.toUrl("funnel-graph-js/dist/css/main.min.css"));
 	includeStylesheet(sap.ui.require.toUrl("funnel-graph-js/dist/css/theme.min.css"));
 
-	var FunnelChart = Control.extend("ui5con.dndashboard.FunnelChart",  {
+	var FunnelChart = Control.extend("ui5-cc-dndashboard.FunnelChart",  {
 		metadata: {
-			library: "ui5con.dndashboard",
+			library: "ui5-cc-dndashboard",
 			properties: {
 				direction: {
 					type: "string",

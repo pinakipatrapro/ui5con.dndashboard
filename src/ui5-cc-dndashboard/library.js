@@ -3,7 +3,7 @@
  */
 
 /**
- * Initialization Code and shared classes of library ui5con.dndashboard.
+ * Initialization Code and shared classes of library ui5-cc-dndashboard.
  */
 sap.ui.define([
 	"sap/ui/core/library"
@@ -12,22 +12,22 @@ sap.ui.define([
 
 	// delegate further initialization of this library to the Core
 	// Hint: sap.ui.getCore() must still be used to support preload with sync bootstrap!
-	sap.ui.getCore().initLibrary({
-		name: "ui5con.dndashboard",
+	var thisLib  = sap.ui.getCore().initLibrary({
+		name: "ui5-cc-dndashboard",
 		version: "${version}",
 		dependencies: [ // keep in sync with the ui5.yaml and .library files
 			"sap.ui.core"
 		],
 		types: [
-			"ui5con.dndashboard.ExampleColor"
+			"ui5-cc-dndashboard.ExampleColor"
 		],
 		interfaces: [],
 		controls: [
-			"ui5con.dndashboard.Example",
-			"ui5con.dndashboard.Dashboard",
-			"ui5con.dndashboard.DashboardTile",
-			"ui5con.dndashboard.DashboardChart",
-			"ui5con.dndashboard.FunnelChart"
+			"ui5-cc-dndashboard.Example",
+			"ui5-cc-dndashboard.Dashboard",
+			"ui5-cc-dndashboard.DashboardTile",
+			"ui5-cc-dndashboard.DashboardChart",
+			"ui5-cc-dndashboard.FunnelChart"
 		],
 		elements: [],
 		noLibraryCSS: false // if no CSS is provided, you can disable the library.css load here
@@ -37,15 +37,15 @@ sap.ui.define([
 	 * Some description about <code>dndashboard</code>
 	 *
 	 * @namespace
-	 * @name ui5con.dndashboard
+	 * @name ui5-cc-dndashboard
 	 * @author Pinaki Patra
 	 * @version ${version}
 	 * @public
 	 */
-	var thisLib = ui5con.dndashboard;
+	// var thisLib = ui5-cc-dndashboard;
 
 	/**
-	 * Semantic Colors of the <code>ui5con.dndashboard.Example</code>.
+	 * Semantic Colors of the <code>ui5-cc-dndashboard.Example</code>.
 	 *
 	 * @enum {string}
 	 * @public

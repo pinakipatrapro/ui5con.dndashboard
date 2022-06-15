@@ -2,8 +2,8 @@
 sap.ui.define([
 	"sap/ui/qunit/QUnitUtils",
 	"sap/ui/qunit/utils/createAndAppendDiv",
-	"ui5con/dndashboard/library",
-	"ui5con/dndashboard/Example"
+	"ui5-cc-dndashboard/library",
+	"ui5-cc-dndashboard/Example"
 ], function(qutils, createAndAppendDiv, library, Example) {
 	"use strict";
 

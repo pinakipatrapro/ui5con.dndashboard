@@ -1,7 +1,7 @@
 
 sap.ui.define([
 	"sap/ui/core/Core",
-	"ui5con/dndashboard/library"
+	"ui5-cc-dndashboard/library"
 ], function (Core, library) {
 	"use strict";
 

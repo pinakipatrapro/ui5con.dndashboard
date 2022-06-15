@@ -1,14 +1,14 @@
 {
   "generator-ui5-library": {
-    "libraryname": "dndashboard",
+    "libraryname": "ui5-cc-dndashboard",
     "namespace": "ui5con",
     "framework": "OpenUI5",
     "frameworkVersion": "1.86.3",
     "author": "Pinaki Patra",
     "newdir": true,
-    "namespaceURI": "ui5con",
-    "librarynamespace": "ui5con.dndashboard",
-    "librarynamespaceURI": "ui5con/dndashboard",
+    "namespaceURI": "",
+    "librarynamespace": "ui5-cc-dndashboard",
+    "librarynamespaceURI": "ui5-cc-dndashboard",
     "librarybasepath": "../../",
     "frameworklowercase": "openui5",
     "setupCompleted": true

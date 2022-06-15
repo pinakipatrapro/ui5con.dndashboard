@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <library xmlns="http://www.sap.com/sap.ui.library.xsd">
-	<name>ui5con.dndashboard</name>
+	<name>ui5-cc-dndashboard</name>
 	<vendor>Pinaki Patra</vendor>
 	<version>${version}</version>
 	<copyright>${copyright}</copyright>

@@ -1,17 +1,17 @@
 sap.ui.define([
-	"ui5con/dndashboard/library", 
+	"ui5-cc-dndashboard/library", 
 	"sap/ui/core/Control", 
-	"ui5con/dndashboard/DashboardChartRenderer",
-	"ui5con/dndashboard/toastui/ChartFunctions"
+	"ui5-cc-dndashboard/DashboardChartRenderer",
+	"ui5-cc-dndashboard/toastui/ChartFunctions"
 ], function (library, Control,DashboardChartRenderer, ChartFunction ) {
 	"use strict";
 
 
 
 
-	var DashboardChart = Control.extend("ui5con.dndashboard.DashboardChart",  {
+	var DashboardChart = Control.extend("ui5-cc-dndashboard.DashboardChart",  {
 		metadata: {
-			library: "ui5con.dndashboard",
+			library: "ui5-cc-dndashboard",
 			properties: {
 				title: {
 					type: "string",
