@@ -11,7 +11,7 @@
 	},
 	"opts": {
 		"recurse": true,
-		"destination": "./dist/docs/",
+		"destination": "./docs/",
         "template": "node_modules/clean-jsdoc-theme"
 
 	}
