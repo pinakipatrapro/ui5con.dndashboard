@@ -1,6 +1,6 @@
 specVersion: '2.2'
 metadata:
-  name: "dndashboard"
+  name: "ui5-cc-dndashboard"
 type: library
 framework:
   name: OpenUI5

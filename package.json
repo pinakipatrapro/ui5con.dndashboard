@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "@ui5/cli": "^2.9.3",
+    "clean-jsdoc-theme": "^4.0.6",
     "karma": "^6.1.1",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
@@ -18,17 +19,18 @@
     ]
   },
   "scripts": {
-    "build": "ui5 build --clean-dest && copy prod-package.json dist\\resources\\ui5-cc-dndashboard\\package.json",
-    "start": "ui5 serve --open test-resources/ui5-cc-dndashboard/Example.html",
+    "build": "ui5 build --clean-dest --exclude-task createDebugFiles && npm run copyfile",
+    "copyfile": "copy prod-package.json dist\\resources\\ui5-cc-dndashboard\\package.json",
+    "start": "ui5 serve --open test-resources/ui5-cc-dndashboard/Dashboard.html",
     "testsuite": "ui5 serve --open test-resources/ui5-cc-dndashboard/qunit/testsuite.qunit.html",
-    "test": "karma start --browsers=ChromeHeadless --singleRun=true"
+    "test": "karma start --browsers=ChromeHeadless --singleRun=true",
+    "doc": "jsdoc -c jsdoc.json"
   },
   "license": "UNLICENSED",
   "dependencies": {
     "@toast-ui/chart": "^4.4.3",
-    "chart.js": "^3.8.0",
-    "chartjs": "^0.3.24",
     "funnel-graph-js": "^1.4.2",
-    "gridstack": "^5.1.0"
+    "gridstack": "^5.1.0",
+    "jsdoc": "^3.6.10"
   }
 }

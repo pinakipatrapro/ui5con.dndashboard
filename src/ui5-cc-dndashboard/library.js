@@ -19,11 +19,9 @@ sap.ui.define([
 			"sap.ui.core"
 		],
 		types: [
-			"ui5-cc-dndashboard.ExampleColor"
 		],
 		interfaces: [],
 		controls: [
-			"ui5-cc-dndashboard.Example",
 			"ui5-cc-dndashboard.Dashboard",
 			"ui5-cc-dndashboard.DashboardTile",
 			"ui5-cc-dndashboard.DashboardChart",
@@ -42,29 +40,6 @@ sap.ui.define([
 	 * @version ${version}
 	 * @public
 	 */
-	// var thisLib = ui5-cc-dndashboard;
-
-	/**
-	 * Semantic Colors of the <code>ui5-cc-dndashboard.Example</code>.
-	 *
-	 * @enum {string}
-	 * @public
-	 */
-	thisLib.ExampleColor = {
-
-		/**
-		 * Default color (brand color)
-		 * @public
-		 */
-		Default : "Default",
-
-		/**
-		 * Highlight color
-		 * @public
-		 */
-		Highlight : "Highlight"
-
-	};
 
 	return thisLib;
 
