@@ -9,6 +9,7 @@
     "karma-chrome-launcher": "^3.1.0",
     "karma-cli": "^2.0.0",
     "karma-ui5": "^2.3.3",
+    "ncp": "^2.0.0",
     "ui5-middleware-livereload": "^0.5.1",
     "ui5-tooling-modules": "^0.3.3"
   },
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "build": "ui5 build --clean-dest --exclude-task createDebugFiles && npm run copyfile",
-    "copyfile": "copy prod-package.json dist\\resources\\ui5-cc-dndashboard\\package.json",
+    "copyfile": "ncp prod-package.json dist\\resources\\ui5-cc-dndashboard\\package.json",
     "start": "ui5 serve --open test-resources/ui5-cc-dndashboard/Dashboard.html",
     "testsuite": "ui5 serve --open test-resources/ui5-cc-dndashboard/qunit/testsuite.qunit.html",
     "test": "karma start --browsers=ChromeHeadless --singleRun=true",
