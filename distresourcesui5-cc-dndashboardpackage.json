@@ -1,0 +1,17 @@
+{
+    "name": "ui5-cc-dndashboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "@toast-ui/chart": "^4.4.3",
+      "funnel-graph-js": "^1.4.2",
+      "gridstack": "^5.1.0"
+    }
+  }
+  
