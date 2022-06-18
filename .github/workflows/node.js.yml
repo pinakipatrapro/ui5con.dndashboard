@@ -28,6 +28,10 @@ jobs:
     - run: npm i
     - run: npm run build --if-present
     - run: npm run doc
+    - run: npm version patch   
+      working-directory: build
+      env:
+        NODE_AUTH_TOKEN: ${{secrets.npm_publish}}
     - name: Commit changes
       uses: EndBug/add-and-commit@v7
       with:
@@ -39,10 +43,7 @@ jobs:
       with:
         node-version: 16
         registry-url: https://registry.npmjs.org/
-    - run: npm version patch   
-      working-directory: build
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.npm_publish}}
+
     - run: npm publish
       working-directory: build
       env:
