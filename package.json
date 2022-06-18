@@ -20,8 +20,7 @@
     ]
   },
   "scripts": {
-    "build": "ui5 build --clean-dest --exclude-task createDebugFiles && npm run copyfile && npm run copybuild",
-    "copyfile": "ncp prod-package.json ./dist/resources/ui5-cc-dndashboard/package.json",
+    "build": "ui5 build --clean-dest --exclude-task createDebugFiles && npm run copybuild",
     "copybuild" : "ncp ./dist/resources/ui5-cc-dndashboard  build",
     "start": "ui5 serve --open test-resources/ui5-cc-dndashboard/Dashboard.html",
     "testsuite": "ui5 serve --open test-resources/ui5-cc-dndashboard/qunit/testsuite.qunit.html",
