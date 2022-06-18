@@ -1,17 +1,38 @@
-{
+
+  {
     "name": "ui5-cc-dndashboard",
     "version": "1.0.0",
-    "description": "",
+    "description": "UI5 custom control library for Drag and Drop Dashboard",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/pinakipatrapro/ui5con.dndashboard.git"
+    },
+    "keywords": [
+      "UI5",
+      "OpenUI5",
+      "UI5Con",
+      "Dashboard",
+      "Drag",
+      "Drop",
+      "Custom",
+      "Library"
+    ],
+    "author": "Pinaki Patra",
     "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/pinakipatrapro/ui5con.dndashboard/issues"
+    },
     "dependencies": {
       "@toast-ui/chart": "^4.4.3",
       "funnel-graph-js": "^1.4.2",
       "gridstack": "^5.1.0"
-    }
+    },
+    "homepage": "https://github.com/pinakipatrapro/ui5con.dndashboard#readme",
+    "private": false
   }
+  
   
