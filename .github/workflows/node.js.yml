@@ -30,8 +30,6 @@ jobs:
     - run: npm run doc
     - run: npm version patch   
       working-directory: build
-      env:
-        NODE_AUTH_TOKEN: ${{secrets.npm_publish}}
     - name: Commit changes
       uses: EndBug/add-and-commit@v7
       with:
