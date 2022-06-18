@@ -1,0 +1,60 @@
+{
+  "_version": "1.21.0",
+  "sap.app": {
+    "id": "ui5-cc-dndashboard",
+    "type": "library",
+    "embeds": [],
+    "applicationVersion": {
+      "version": "1.0.0"
+    },
+    "title": "dndashboard",
+    "description": "Some description about dndashboard",
+    "resources": "resources.json",
+    "offline": true
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "supportedThemes": [
+      "base",
+      "sap_belize",
+      "sap_belize_hcb",
+      "sap_belize_hcw",
+      "sap_belize_plus",
+      "sap_fiori_3",
+      "sap_fiori_3_dark",
+      "sap_fiori_3_hcb",
+      "sap_fiori_3_hcw",
+      "sap_horizon",
+      "sap_horizon_dark"
+    ]
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.102",
+      "libs": {
+        "sap.ui.core": {
+          "minVersion": "1.102.1"
+        }
+      }
+    },
+    "library": {
+      "i18n": {
+        "bundleUrl": "messagebundle.properties",
+        "supportedLocales": [
+          ""
+        ]
+      },
+      "content": {
+        "controls": [
+          "ui5-cc-dndashboard.Dashboard",
+          "ui5-cc-dndashboard.DashboardTile",
+          "ui5-cc-dndashboard.DashboardChart",
+          "ui5-cc-dndashboard.FunnelChart"
+        ],
+        "elements": [],
+        "types": [],
+        "interfaces": []
+      }
+    }
+  }
+}

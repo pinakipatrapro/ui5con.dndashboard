@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Control"],function(e){"use strict";return{getData:function(e,t){var a=e.getData();var r=e.getMeasure();var n=e.getDimension()[0];var n=[...new Set(a.map(e=>e[n]))];var i=[];r.forEach(e=>{i.push({name:e,data:a.map(t=>t[e])})});return{categories:n,series:i}},changeOptions:function(e,t){t.exportMenu.visible=true;return t}}});
