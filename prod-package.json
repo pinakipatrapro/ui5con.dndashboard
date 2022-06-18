@@ -32,7 +32,10 @@
       "gridstack": "^5.1.0"
     },
     "homepage": "https://github.com/pinakipatrapro/ui5con.dndashboard#readme",
-    "private": false
+    "private": false,
+    "publishConfig": {
+      "access": "public"
+    }
   }
   
   
