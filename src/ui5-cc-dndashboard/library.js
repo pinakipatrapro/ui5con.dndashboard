@@ -29,7 +29,7 @@ sap.ui.define([
 			"ui5-cc-dndashboard.FunnelChart"
 		],
 		elements: [],
-		noLibraryCSS: true // if no CSS is provided, you can disable the library.css load here
+		noLibraryCSS: false // if no CSS is provided, you can disable the library.css load here
 	});
 	
 
