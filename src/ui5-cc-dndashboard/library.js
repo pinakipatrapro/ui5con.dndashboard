@@ -6,8 +6,9 @@
  * Initialization Code and shared classes of library ui5-cc-dndashboard.
  */
 sap.ui.define([
-	"sap/ui/core/library"
-], function () {
+	"sap/ui/core/library",
+	"sap/ui/dom/includeStylesheet"
+], function (library) {
 	"use strict";
 
 	// delegate further initialization of this library to the Core
@@ -28,8 +29,9 @@ sap.ui.define([
 			"ui5-cc-dndashboard.FunnelChart"
 		],
 		elements: [],
-		noLibraryCSS: false // if no CSS is provided, you can disable the library.css load here
+		noLibraryCSS: true // if no CSS is provided, you can disable the library.css load here
 	});
+	
 
 	/**
 	 * Some description about <code>dndashboard</code>

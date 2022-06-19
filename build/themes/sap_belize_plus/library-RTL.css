@@ -1,4 +1,4 @@
-.myLibPrefixExample,.myLibPrefixExampleHighlight{color:#333;background-color:#f4f5f6;border:1rem solid #bfbfbf;border-radius:1rem;opacity:0.8;padding:2rem;margin:2rem 8rem;text-align:center;font-size:2em;line-height:3em}.myLibPrefixExampleHighlight{background-color:#e4f5e4}.dndashboardTileEditable{border:2px dashed #ccc}.sapContrastPlus.myLibPrefixExample,.sapContrastPlus .myLibPrefixExample,.sapContrastPlus.myLibPrefixExampleHighlight,.sapContrastPlus .myLibPrefixExampleHighlight{color:#fafafa;background-color:#393e41;border:1rem solid #889eb1;}.sapContrastPlus.myLibPrefixExampleHighlight,.sapContrastPlus .myLibPrefixExampleHighlight{background-color:#174417;}.sapContrastPlus.dndashboardTileEditable,.sapContrastPlus .dndashboardTileEditable{border:2px dashed #69859d;}
+.dndashboardTileEditable{border:2px dashed #ccc}.sapContrastPlus.dndashboardTileEditable,.sapContrastPlus .dndashboardTileEditable{border:2px dashed #69859d;}
 
 /* Inline theming parameters */
 #sap-ui-theme-ui5-cc-dndashboard{background-image:url('data:text/plain;utf-8,%7B%22default%22%3A%7B%7D%2C%22scopes%22%3A%7B%22sapContrastPlus%22%3A%7B%7D%7D%7D')}
