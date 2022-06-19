@@ -21,7 +21,7 @@ sap.ui.define([
 		rm.attr("gs-h", control.getHeight());
 
 		if(control.getEditable()){
-			rm.class('dndashboardTileEditable')
+			rm.style("border", "2px dashed #495767");
 		}
 		rm.openEnd( );
 

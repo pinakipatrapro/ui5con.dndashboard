@@ -14,7 +14,6 @@ sap.ui.define([
 
 
 	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
-	includeStylesheet(sap.ui.require.toUrl(`ui5-cc-dndashboard/Dashboard.css`));
 	/**
 	 * Constructor for a new <code>ui5con.dashboard.Example</code> control.
 	 *
