@@ -90,7 +90,7 @@ sap.ui.define([
 				cellHeight: '5rem',
 				float: this.getFloat(),
 				minRow: 4,
-				margin: 5,
+				margin: 5, 
 			});
 			grid.on('resizestop', function (event, items) {
 				sap.ui.getCore().byId(items.getAttribute('id')).setWidth(items.getAttribute('gs-w'));
