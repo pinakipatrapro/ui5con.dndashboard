@@ -69,7 +69,7 @@ sap.ui.define([
 			var measure = this.getMeasure()
 			var data = this.getData()
 
-			var data  = data.sort((a,b)=>{
+			data  = data.sort((a,b)=>{
 				return b[measure[0]]-a[measure[0]]
 			})
 			var dataFormatted = {
