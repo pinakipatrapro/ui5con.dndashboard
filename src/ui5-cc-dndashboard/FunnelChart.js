@@ -1,3 +1,8 @@
+/*!
+ * ${copyright}
+ */
+
+
 sap.ui.define([
 	"ui5-cc-dndashboard/library", 
 	"sap/ui/core/Control", 
@@ -11,7 +16,23 @@ sap.ui.define([
 
 	includeStylesheet(sap.ui.require.toUrl("funnel-graph-js/dist/css/main.min.css"));
 	includeStylesheet(sap.ui.require.toUrl("funnel-graph-js/dist/css/theme.min.css"));
-
+	/**
+	 * Constructor for a new <code>FunnelChart</code> control.
+	 
+	* @param {string} [sId] id for the new control, generated automatically if no id is given
+	* @param {object} [mSettings] initial settings for the new control
+	*
+	* @class
+	* Create an instance of a FunnelChart
+	* @extends sap.ui.core.Control
+	*
+	* @author Pinaki Patra
+	* @version ${version}
+	*
+	* @constructor
+	* @public
+	* @alias ui5-cc-dndashboard.FunnelChart
+	*/
 	var FunnelChart = Control.extend("ui5-cc-dndashboard.FunnelChart",  {
 		metadata: {
 			library: "ui5-cc-dndashboard",

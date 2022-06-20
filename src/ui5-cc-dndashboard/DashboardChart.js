@@ -1,3 +1,7 @@
+/*!
+ * ${copyright}
+ */
+
 sap.ui.define([
 	"ui5-cc-dndashboard/library", 
 	"sap/ui/core/Control", 
@@ -8,7 +12,23 @@ sap.ui.define([
 
 
 
-
+	/**
+	 * Constructor for a new <code>DashboardChart</code> control.
+	 
+	* @param {string} [sId] id for the new control, generated automatically if no id is given
+	* @param {object} [mSettings] initial settings for the new control
+	*
+	* @class
+	* Create an instance of a DashboardChart
+	* @extends sap.ui.core.Control
+	*
+	* @author Pinaki Patra
+	* @version ${version}
+	*
+	* @constructor
+	* @public
+	* @alias ui5-cc-dndashboard.DashboardChart
+	*/
 	var DashboardChart = Control.extend("ui5-cc-dndashboard.DashboardChart",  {
 		metadata: {
 			library: "ui5-cc-dndashboard",

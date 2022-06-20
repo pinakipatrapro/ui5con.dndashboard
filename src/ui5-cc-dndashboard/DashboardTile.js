@@ -1,3 +1,8 @@
+/*!
+ * ${copyright}
+ */
+
+// Provides control ui5-cc-dndashboard.DashboardTile.
 sap.ui.define([
 	"ui5-cc-dndashboard/library", 
 	"sap/ui/core/Control", 
@@ -8,7 +13,23 @@ sap.ui.define([
 
 
 	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
-
+	/**
+	 * Constructor for a new <code>DashboardTile</code> control.
+	 
+	* @param {string} [sId] id for the new control, generated automatically if no id is given
+	* @param {object} [mSettings] initial settings for the new control
+	*
+	* @class
+	* Create an instance of an Drag and drop DashboardTile
+	* @extends sap.ui.core.Control
+	*
+	* @author Pinaki Patra
+	* @version ${version}
+	*
+	* @constructor
+	* @public
+	* @alias ui5-cc-dndashboard.DashboardTile
+	*/
 	var DashboardTile = Control.extend("ui5-cc-dndashboard.DashboardTile",  {
 		metadata: {
 			library: "ui5-cc-dndashboard",

@@ -5,11 +5,20 @@ sap.ui.define([
 ], function (Core, library) {
 	"use strict";
 
-
+	/**
+	 * Example renderer.
+	 * @namespace
+	 */
 	var DashboardRenderer = {
 		apiVersion: 2 // usage of DOM Patcher
 	};
-
+	/**
+	 * Renders the HTML for the given control, using the provided
+	 * {@link sap.ui.core.RenderManager}.
+	 *
+	 * @param {sap.ui.core.RenderManager} rm The reference to the <code>sap.ui.core.RenderManager</code>
+	 * @param {sap.ui.core.Control} control The control instance to be rendered
+	 */
 	DashboardRenderer.render = function (rm, control) {
 
 		rm.openStart("div", control);
