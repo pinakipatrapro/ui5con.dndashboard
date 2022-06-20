@@ -16,7 +16,7 @@ sap.ui.define([
 	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
 	/**
 	 * Constructor for a new <code>Dashboard</code> control.
-	 *<h3>Overview</h3>
+	 * <h3>Overview</h3>
 	 * The ui5-cc-dndashboard.Dashboard is a container control that holds the dashboard .
 	 * The Dashboard accepts aggregation <code>tiles</code> of type  <code>ui5-cc-dndashboard.DashboardTile</code> which is the draggable component.
 	 * @param {string} [sId] id for the new control, generated automatically if no id is given
