@@ -1,4 +1,6 @@
-## **UI5 custom library** `**ui5-cc-dndashboard**`
+## **UI5 custom library** `ui5-cc-dndashboard`
+
+[![Build and Publish to NPM](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml)
 
 > **DISCLAIMER**: This is a community project and there is no official support for this package! Also the functionality may stop working at any time in future with newer versions of the UI5 tooling!
 
