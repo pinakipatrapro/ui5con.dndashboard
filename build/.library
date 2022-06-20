@@ -2,8 +2,8 @@
 <library xmlns="http://www.sap.com/sap.ui.library.xsd">
 	<name>ui5-cc-dndashboard</name>
 	<vendor>Pinaki Patra</vendor>
-	<version>1.0.0</version>
-	<copyright>${copyright}</copyright>
+	<version>1.0</version>
+	<copyright>Pinaki Patra 2022</copyright>
 	<title>dndashboard</title>
 	<documentation>Some description about dndashboard</documentation>
 	<dependencies>

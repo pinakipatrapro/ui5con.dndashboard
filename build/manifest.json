@@ -5,7 +5,7 @@
     "type": "library",
     "embeds": [],
     "applicationVersion": {
-      "version": "1.0.0"
+      "version": "1.0"
     },
     "title": "dndashboard",
     "description": "Some description about dndashboard",
