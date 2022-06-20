@@ -90,7 +90,6 @@ sap.ui.define([
 				cellHeight: '5rem',
 				float: this.getFloat(),
 				minRow: 4,
-				float: true,
 				margin: 5,
 			});
 			grid.on('resizestop', function (event, items) {

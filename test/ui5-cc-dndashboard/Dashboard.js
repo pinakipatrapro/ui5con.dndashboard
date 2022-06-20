@@ -19,7 +19,6 @@ sap.ui.define([
 				"height":"{height}",
 				"content": new DashboardChart({
 					title: "{title}",
-					chartType: "{chartType}",
 					darkMode: sap.ui.getCore().getConfiguration().getTheme().indexOf('dark')>0?true:false,
 					chartType : "{chartType}",
 					measure : "{measure}",
