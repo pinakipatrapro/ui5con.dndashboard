@@ -1,6 +1,6 @@
 ## **UI5 custom library** `ui5-cc-dndashboard`
 
-[![Build](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml)  [![DeepScan grade](https://deepscan.io/api/teams/15402/projects/21418/branches/614234/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=15402&pid=21418&bid=614234)
+[![Build](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml)  [![DeepScan grade](https://deepscan.io/api/teams/15402/projects/21418/branches/614234/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=15402&pid=21418&bid=614234) 
 
 > **DISCLAIMER**: This is a community project and there is no official support for this package! Also the functionality may stop working at any time in future with newer versions of the UI5 tooling!
 
