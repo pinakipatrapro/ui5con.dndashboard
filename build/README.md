@@ -22,4 +22,6 @@ npm i ui5-cc-dndashboard --save-dev
 **ui5-tooling-modules ** is a pre-requisite which allows us to use NPM package names for AMD-like dependencies. More details [**here**](https://www.npmjs.com/package/ui5-tooling-modules)
 
 
-### [JSDoc](https://pinakipatrapro.github.io/ui5con.dndashboard/ui5-cc-dndashboard.html)
+### [JSDoc](https://pinakipatrapro.github.io/ui5con.dndashboard/ui5-cc-dndashboard.html)  [![pages-build-deployment](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/pages/pages-build-deployment)
+
+
