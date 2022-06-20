@@ -173,7 +173,7 @@ sap.ui.define([
 	});
 	page.addStyleClass('sapUiSizeCompact')
 	page.setModel(model);
-	
+	//Add app to content
 	new App({
 		pages : page
 	}).placeAt("content");
