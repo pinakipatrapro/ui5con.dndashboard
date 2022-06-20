@@ -35,14 +35,23 @@ sap.ui.define([
 		metadata: {
 			library: "ui5-cc-dndashboard",
 			properties: {
+				/**
+				 * If dashboard layout is editable.Enables user to drag and drop tiles
+				 */
 				editable: {
 					type: "boolean",
 					defaultValue: false
 				},
+				/**
+				 * If set to true, the DashboardTiles will auto arrange irrespective of the dropped location
+				 */
 				float: {
 					type: "boolean",
 					defaultValue: true
 				},
+				/**
+				 * Dashboard container height
+				 */
 				height: {
 					type: "string",
 					defaultValue: "80vh"
