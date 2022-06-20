@@ -1,6 +1,6 @@
 ## **UI5 custom library** `ui5-cc-dndashboard`
 
-[![Build and Publish to NPM](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml)
+[![Build](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/pinakipatrapro/ui5con.dndashboard/actions/workflows/node.js.yml)
 
 > **DISCLAIMER**: This is a community project and there is no official support for this package! Also the functionality may stop working at any time in future with newer versions of the UI5 tooling!
 
@@ -20,3 +20,6 @@ npm i ui5-cc-dndashboard --save-dev
 ```
 
 **ui5-tooling-modules ** is a pre-requisite which allows us to use NPM package names for AMD-like dependencies. More details [**here**](https://www.npmjs.com/package/ui5-tooling-modules)
+
+
+### [JSDoc](https://pinakipatrapro.github.io/ui5con.dndashboard/ui5-cc-dndashboard.html)
