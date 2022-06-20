@@ -6,7 +6,8 @@ sap.ui.define([
         getData: function (oControl,options) {
             var data = oControl.getData();
             var measure = oControl.getMeasure()[0];
-            measure = measure;
+            
+            
             var xDimension = oControl.getDimension()[0];
             var yDimension = oControl.getDimension()[1];
 

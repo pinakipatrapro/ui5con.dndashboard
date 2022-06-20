@@ -7,7 +7,7 @@ sap.ui.define([
             var data = oControl.getData();
             var measure = oControl.getMeasure();
             var xDimension = oControl.getDimension()[0];
-            var xDimension = [...new Set(data.map(e => { return e[xDimension] }))];
+            xDimension = [...new Set(data.map(e => { return e[xDimension] }))];
             var series = [];
 
             measure.forEach(e => {
