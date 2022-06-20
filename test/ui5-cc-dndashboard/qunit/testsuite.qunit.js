@@ -23,10 +23,10 @@ sap.ui.define(function() {
 			module: "./{name}.qunit"
 		},
 		tests: {
-			// test file for the Example control
-			Example: {
-				title: "QUnit Test for Example",
-				_alternativeTitle: "QUnit tests: ui5-cc-dndashboard.Example"
+			// test file for the Dashboard control
+			Dashboard: {
+				title: "QUnit Test for Dashboard",
+				_alternativeTitle: "QUnit tests: ui5-cc-dndashboard.Dashboard"
 			}
 		}
 	};

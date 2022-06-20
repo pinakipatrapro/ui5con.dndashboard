@@ -25,17 +25,20 @@ sap.ui.define([
 		rm.style("height", control.getHeight());
 		rm.openEnd( );
 
-			rm.renderControl(control.getAggregation('header'))
+			if(!!control.getAggregation('header')){
+				rm.renderControl(control.getAggregation('header'))
+			}
 			
 			
 			rm.openStart("div");
 			rm.class("grid-stack")
 			rm.openEnd();
-			
-				control.getAggregation('tiles').map((e)=>{
-					e.setEditable(control.getEditable())
-					rm.renderControl(e)
-				})
+				if(!!control.getAggregation('tiles')){
+					control.getAggregation('tiles').map((e)=>{
+						e.setEditable(control.getEditable())
+						rm.renderControl(e)
+					})
+				}
 			rm.close("div");
 
 		rm.close("div");
