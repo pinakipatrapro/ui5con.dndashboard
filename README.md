@@ -13,7 +13,6 @@ This package contains a UI5 Custom Control Library which enables the creation of
 3.  ui5-cc-dndashboard.**DashboardChart :** Contains the charting library which can create different chart types (Using ToastUI)
 4.  ui5-cc-dndashboard.**FunnelChart:** Creates funnel chart
 
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/5a6fdf6e48498db1d009b74a8bef8ae1402e754fd6821391.png)
 
 ---
 
