@@ -7,6 +7,12 @@
 ![image](https://user-images.githubusercontent.com/32954893/177041440-dfcd6400-20f4-4027-bc58-f44b29a95be5.png)
 
 
+
+### Sample Application
+
+[Dashboard](https://github.com/pinakipatrapro/ui5.con.myDashboard)
+
+
 ### **What is it?**
 
 This package contains a UI5 Custom Control Library which enables the creation of _**Drag and Drop Dashboards**_ in UI5. This is fully configurable to include any UI5 controls or third party controls. This library primarily consists of 4 controls:

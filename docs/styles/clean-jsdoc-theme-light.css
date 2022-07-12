@@ -13,6 +13,10 @@ body.light {
     color: #007bff;
 }
 
+.light hr {
+    color: #f7f7f7;
+}
+
 .light h1,
 .light h2,
 .light h3,
@@ -154,10 +158,6 @@ body.light {
 .light .details {
     background: #f9f9f9;
     color: #101010;
-}
-
-.light .details a {
-    color: #111;
 }
 
 .light .member-item-container strong,
