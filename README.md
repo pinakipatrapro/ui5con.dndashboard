@@ -10,7 +10,7 @@
 
 ### Sample Application
 
-[Dashboard](https://github.com/pinakipatrapro/ui5.con.myDashboard)
+[Custom Dashboard](https://github.com/pinakipatrapro/ui5.con.myDashboard)
 
 
 ### **What is it?**
