@@ -14,7 +14,7 @@
 
 [Step-by-Step Guide](https://gist.github.com/pinakipatrapro/db95b037849f869f8592f4282e32d415)
 
-[JSDoc](https://pinakipatrapro.github.io/ui5con.dndashboard/ui5-cc-dndashboard.Dashboard.html)
+[JSDoc](https://pinakipatrapro.github.io/ui5con.dndashboard/ui5-cc-dndashboard.Dashboard.html)  
 
 ### **What is it?**
 
