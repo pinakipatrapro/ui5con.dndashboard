@@ -12,6 +12,7 @@
 
 [Custom Dashboard](https://github.com/pinakipatrapro/ui5.con.myDashboard)
 
+[Step-by-Step Guide](https://gist.github.com/pinakipatrapro/db95b037849f869f8592f4282e32d415)
 
 ### **What is it?**
 
