@@ -4,7 +4,7 @@
 
 > **DISCLAIMER**: This is a community project and there is no official support for this package! Also the functionality may stop working at any time in future with newer versions of the UI5 tooling!
 
-![image](https://user-images.githubusercontent.com/32954893/177041440-dfcd6400-20f4-4027-bc58-f44b29a95be5.png)
+![image](https://user-images.githubusercontent.com/32954893/177071441-22e53f41-6286-4122-927f-e37cae3e1ba7.gif)
 
 
 
