@@ -2,7 +2,7 @@
   {
     "name": "ui5-cc-dndashboard",
     "version": "1.0.0",
-    "description": "UI5 custom control library for Drag and Drop Dashboard",
+    "description": "This package contains a UI5 Custom Control Library which enables the creation of Drag and Drop Dashboards in UI5. This is fully configurable to include any UI5 controls or third party controls",
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
