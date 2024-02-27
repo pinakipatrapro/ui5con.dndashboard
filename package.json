@@ -1,7 +1,7 @@
 {
   "name": "ui5-cc-dndashboard",
   "description": "This package contains a UI5 Custom Control Library which enables the creation of Drag and Drop Dashboards in UI5. This is fully configurable to include any UI5 controls or third party controls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "devDependencies": {
     "@ui5/cli": "^2.9.3",
