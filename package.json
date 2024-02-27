@@ -30,7 +30,7 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
-    "@toast-ui/chart": "^4.4.3",
+    "@toast-ui/chart": "^4.6.1",
     "funnel-graph-js": "^1.4.2",
     "gridstack": "^5.1.0",
     "jsdoc": "^3.6.10"

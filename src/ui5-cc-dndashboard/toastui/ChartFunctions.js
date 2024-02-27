@@ -1,7 +1,7 @@
 sap.ui.define([
-    "ui5-cc-dndashboard/library", 
+    "ui5-cc-dndashboard/library",
 	"sap/ui/core/Control",
-	"@toast-ui/chart/dist/toastui-chart.min.js",
+	"ui5-cc-dndashboard/toastui/toastui-chart.min",
     'ui5-cc-dndashboard/toastui/ChartFunction/BubbleChart',
     'ui5-cc-dndashboard/toastui/ChartFunction/PieChart',
     'ui5-cc-dndashboard/toastui/ChartFunction/AreaChart',
@@ -19,7 +19,7 @@ sap.ui.define([
     RadarChart, RadarBarChart, HeatMapChart, NestedPieChart, ScatterChart,includeStylesheet) {
     "use strict";
 
-	includeStylesheet(sap.ui.require.toUrl("@toast-ui/chart/dist/toastui-chart.min.css"));
+	includeStylesheet(sap.ui.require.toUrl("ui5-cc-dndashboard/toastui/toastui-chart.min.css"));
 
     return {
         createChart: function (oControl) {
@@ -75,7 +75,7 @@ sap.ui.define([
                 }
             };
             const data = this.formatData[oControl.getChartType()](oControl, options);
-            const chart = Chart[oControl.getChartType()]({ el, data, options });
+            const chart = toastui.Chart[oControl.getChartType()]({ el, data, options });
 
             this.postChartRendering()
         },
@@ -201,7 +201,7 @@ sap.ui.define([
                 // options = NestedPieChart.changeOptions(oControl,options);
                 return NestedPieChart.getData(oControl, options);
             },
- 
+
             scatterChart: function (oControl, options) {
                 // options = ScatterChart.changeOptions(oControl,options);
                 return ScatterChart.getData(oControl, options);
