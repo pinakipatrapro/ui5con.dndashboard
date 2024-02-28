@@ -7,13 +7,12 @@ sap.ui.define([
 	"ui5-cc-dndashboard/library",
 	"sap/ui/core/Control",
 	"ui5-cc-dndashboard/DashboardRenderer",
-	"gridstack/dist/gridstack-h5",
 	"sap/ui/dom/includeStylesheet"
-], function (library, Control, DashboardRenderer, GridStack, includeStylesheet) {
+], function (library, Control, DashboardRenderer, includeStylesheet) {
 	"use strict";
 
 
-	includeStylesheet(sap.ui.require.toUrl("gridstack/dist/gridstack.min.css"));
+
 	/**
 	 * Constructor for a new <code>Dashboard</code> control.
 	 * <h3>Overview</h3>
@@ -44,7 +43,7 @@ sap.ui.define([
 			properties: {
 				/**
 				 * @param mSettings.editable If dashboard layout is editable.Enables user to drag and drop tiles.
-				 * 
+				 *
 				 */
 				editable: {
 					type: "boolean",
@@ -90,7 +89,7 @@ sap.ui.define([
 				cellHeight: '5rem',
 				float: this.getFloat(),
 				minRow: 4,
-				margin: 5, 
+				margin: 5,
 			});
 			grid.on('resizestop', function (event, items) {
 				sap.ui.getCore().byId(items.getAttribute('id')).setWidth(items.getAttribute('gs-w'));
