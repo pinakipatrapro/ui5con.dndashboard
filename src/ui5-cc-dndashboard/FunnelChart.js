@@ -4,12 +4,11 @@
 
 
 sap.ui.define([
-	"ui5-cc-dndashboard/library", 
-	"sap/ui/core/Control", 
+	"ui5-cc-dndashboard/library",
+	"sap/ui/core/Control",
 	"ui5-cc-dndashboard/FunnelChartRenderer",
-	"funnel-graph-js/dist/js/funnel-graph.min.js",
 	"sap/ui/dom/includeStylesheet"
-], function (library, Control,FunnelChartRenderer ,FunnelGraph,includeStylesheet) {
+], function (library, Control,FunnelChartRenderer ,includeStylesheet) {
 	"use strict";
 
 
@@ -18,7 +17,7 @@ sap.ui.define([
 	includeStylesheet(sap.ui.require.toUrl("funnel-graph-js/dist/css/theme.min.css"));
 	/**
 	 * Constructor for a new <code>FunnelChart</code> control.
-	 
+
 	* @param {string} [sId] id for the new control, generated automatically if no id is given
 	* @param {object} [mSettings] initial settings for the new control
 	*
@@ -103,7 +102,7 @@ sap.ui.define([
 			setTimeout(()=>{
 				graph.draw();
 			},0)
-			
+
 		}
 	});
 	return FunnelChart;
