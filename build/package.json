@@ -1,6 +1,6 @@
 {
     "name": "ui5-cc-dndashboard",
-    "version": "1.0.45",
+    "version": "1.0.46",
     "description": "UI5 custom control library for Drag and Drop Dashboard",
     "main": "index.js",
     "scripts": {
