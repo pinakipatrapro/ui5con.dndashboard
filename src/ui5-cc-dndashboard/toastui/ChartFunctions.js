@@ -1,7 +1,6 @@
 sap.ui.define([
     "ui5-cc-dndashboard/library",
 	"sap/ui/core/Control",
-	"ui5-cc-dndashboard/toastui/toastui-chart.min",
     'ui5-cc-dndashboard/toastui/ChartFunction/BubbleChart',
     'ui5-cc-dndashboard/toastui/ChartFunction/PieChart',
     'ui5-cc-dndashboard/toastui/ChartFunction/AreaChart',
@@ -15,11 +14,12 @@ sap.ui.define([
     'ui5-cc-dndashboard/toastui/ChartFunction/ScatterChart',
 	"sap/ui/dom/includeStylesheet"
 
-], function (library, Control,Chart, BubbleChart, PieChart, AreaChart, BarChart, LineChart, ColumnChart,
-    RadarChart, RadarBarChart, HeatMapChart, NestedPieChart, ScatterChart,includeStylesheet) {
+], async function (library, Control, BubbleChart, PieChart, AreaChart, BarChart, LineChart, ColumnChart,
+    RadarChart, RadarBarChart, HeatMapChart, NestedPieChart, ScatterChart) {
     "use strict";
 
-	includeStylesheet(sap.ui.require.toUrl("ui5-cc-dndashboard/toastui/toastui-chart.min.css"));
+	await jQuery.sap.includeStyleSheet("https://uicdn.toast.com/chart/latest/toastui-chart.min.css");
+    await jQuery.sap.includeScript("https://uicdn.toast.com/chart/latest/toastui-chart.min.js");
 
     return {
         createChart: function (oControl) {

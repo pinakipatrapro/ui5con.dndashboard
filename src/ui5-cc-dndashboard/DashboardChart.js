@@ -3,8 +3,8 @@
  */
 
 sap.ui.define([
-	"ui5-cc-dndashboard/library", 
-	"sap/ui/core/Control", 
+	"ui5-cc-dndashboard/library",
+	"sap/ui/core/Control",
 	"ui5-cc-dndashboard/DashboardChartRenderer",
 	"ui5-cc-dndashboard/toastui/ChartFunctions"
 ], function (library, Control,DashboardChartRenderer, ChartFunction ) {
@@ -14,7 +14,7 @@ sap.ui.define([
 
 	/**
 	 * Constructor for a new <code>DashboardChart</code> control.
-	 
+
 	* @param {string} [sId] id for the new control, generated automatically if no id is given
 	* @param {object} [mSettings] initial settings for the new control
 	*
@@ -131,10 +131,12 @@ sap.ui.define([
 			}
 		},
 		renderer: DashboardChartRenderer,
-		onAfterRendering: function() {
-			ChartFunction.createChart(
-				this
-			)
+		onAfterRendering: async function() {
+			ChartFunction.then(e=>{
+                e.createChart(
+                    this
+                )
+            })
 		}
 	});
 	DashboardChart.prototype.smartNumberFormat = function (num, digits, doFormat) {
